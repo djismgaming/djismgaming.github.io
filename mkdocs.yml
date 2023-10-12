@@ -1,8 +1,6 @@
 site_name: djismgaming's tech home
 site_url: https://djismgaming.github.io
-repo_url: https://github.com/djismgaming/djismgaming.github.io/tree/gh-pages
 site_description: Web home for tech things!
-# site_dir: ../djismgaming.github.io
 theme:
   name: material
   features:
@@ -15,8 +13,6 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - content.action.edit
-    - content.action.view
     - navigation.footer
   language: en
   palette:
