@@ -2,4 +2,4 @@
 
 Set up this site to accomodate some documentation in an easier to update path.
 
-[Test (./TEST.md)]
+[Test](./TEST.md)
