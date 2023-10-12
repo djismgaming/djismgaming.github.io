@@ -18,16 +18,22 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
+        icon: material/weather-night
         name: Switch to dark mode
       primary: teal
       accent: purple 
     - scheme: slate 
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode    
       primary: teal
       accent: lime
+
+plugins:
+  - search
+  - blog
+  - social
+  - tags
 
 extra:
   social:
