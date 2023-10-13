@@ -47,7 +47,10 @@ theme:
 
 plugins:
   - search
-  - blog
+  - blog:
+      post_excerpt: required
+      post_excerpt_max_authors: 0
+      post_excerpt_separator: <!-- more -->
   - social
   - tags
   - git-authors
@@ -80,9 +83,13 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.mark
   - attr_list
+  - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: ⚓︎
+      permalink_title: Anchor link to this section for reference
 
 copyright: |
   &copy; 2023 <a href="https://github.com/djismgaming"  target="_blank" rel="noopener">Ismael Lamberty</a>
