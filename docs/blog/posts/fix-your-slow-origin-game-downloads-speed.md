@@ -13,6 +13,8 @@ authors:
 
 # Fix your SLOW Origin Games download speeds – UPDATED
 
+![EA Origin logo](../../images/origin.png)
+
 UPDATE 2023.10.13 - This post is here just for history's sake as Origin is basically deprecated at this point in time. It's always nice to keep history though. :wink:
 
 UPDATE 2021.08.20 – This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.

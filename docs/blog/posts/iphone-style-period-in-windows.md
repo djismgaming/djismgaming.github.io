@@ -15,6 +15,9 @@ authors:
 ---
 
 # iPhone style: Add a period after entering two spaces in Windows 10
+
+![Alt text](../../images/iphone-period.png)
+
 Today we type even more than ever during this pandemic. Working from home is a default now.
 
 This AutoHotKey script will add a period after you end a sentence by using two spaces. iPhone style period ending on Windows 10!
