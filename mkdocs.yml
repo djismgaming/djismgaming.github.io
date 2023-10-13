@@ -16,18 +16,18 @@ theme:
     - navigation.footer
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-      primary: teal
-      accent: purple 
     - scheme: slate 
       toggle:
-        icon: material/weather-sunny
+        icon: material/weather-night
         name: Switch to light mode    
       primary: teal
       accent: lime
+    - scheme: dark
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+      primary: teal
+      accent: purple 
 
 plugins:
   - search
