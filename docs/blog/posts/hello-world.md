@@ -9,4 +9,6 @@ tags:
 
 # Hello world
 
-...
+This is the default first post for `mkdocs`. :wink:
+
+It was good to start with something familiar!
