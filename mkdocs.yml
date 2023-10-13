@@ -1,19 +1,30 @@
 site_name: djismgaming's tech home
 site_url: https://djismgaming.github.io
+repo_url: https://www.github.com/djismgaming/djismgaming.github.io
+edit_uri: /edit/main/docs/
 site_description: Web home for tech things!
 theme:
   name: material
   features:
     - navigation.tabs
-    - navigation.sections
-    - toc.integrate
     - navigation.top
+    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - toc.integrate
+    - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-    - navigation.footer
+    - content.action.edit
+    - content.action.view
   language: en
   palette:
     # Palette toggle for dark mode
@@ -38,11 +49,17 @@ plugins:
   - blog
   - social
   - tags
+  - git-authors
+  - git-revision-date-localized:
+      enable_creation_date: true
+  
 
 extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/djismgaming
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/djismgaming
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/djismgaming
     - icon: fontawesome/brands/linkedin
