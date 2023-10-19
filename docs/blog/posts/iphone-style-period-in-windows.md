@@ -16,7 +16,12 @@ authors:
 
 # iPhone style: Add a period after entering two spaces in Windows 10
 
-![Alt text](../../images/iphone-period.png)
+
+
+<figure markdown>
+  ![Alt text](../../images/iphone-period.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
 
 Today we type even more than ever during this pandemic. Working from home is a default now.
 

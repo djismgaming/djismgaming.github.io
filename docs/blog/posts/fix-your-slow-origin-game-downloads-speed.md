@@ -13,7 +13,12 @@ authors:
 
 # Fix your SLOW Origin Games download speeds – UPDATED
 
-![EA Origin logo](../../images/origin.png)
+
+
+<figure markdown>
+  ![EA Origin logo](../../images/origin.png){ width="400" }
+  <figcaption></figcaption>
+</figure>
 
 UPDATE 2023.10.13 - This post is here just for history's sake as Origin is basically deprecated at this point in time. It's always nice to keep history though. :wink:
 
