@@ -20,8 +20,8 @@ authors:
 # SSH Tunneling for easy access to web-based apps form servers
 
 <figure markdown>
-  ![Alt text](../../images/ssh-tunnel.jpg){ width="300" }
-  <figcaption>Image caption</figcaption>
+  ![Alt text](../../images/ssh-tunnel.jpg){ width="400" }
+  <figcaption></figcaption>
 </figure>
 
 I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:
