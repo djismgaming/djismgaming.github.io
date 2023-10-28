@@ -1,3 +1,22 @@
+---
+draft: false
+date: 2023-10-28
+categories:
+  # - Gaming
+  # - unRAID
+  # - Proxmox
+tags:
+  - linux
+  - proxmox
+  # - autohotkey
+  # - windows
+  # - gaming
+  # - origin
+  # - EA Desktop
+authors:
+  - ismael
+---
+
 # ntfy notifications from unRAID
 
 ``` bash
