@@ -1,4 +1,4 @@
-name: ci 
+name: documentation 
 on:
   push:
     branches:
@@ -11,6 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          sparse-checkout: |
+            docs
+            includes
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
@@ -21,6 +26,7 @@ jobs:
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material "mkdocs-material[imaging]" mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
+      # - run: pip install mkdocs-material "mkdocs-material[imaging]" mkdocs-git-authors-plugin mkdocs-git-revision-date-localized-plugin
+      - run: pip install -r requirements.txt
 
       - run: mkdocs gh-deploy --force
