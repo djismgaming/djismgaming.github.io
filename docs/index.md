@@ -1,26 +1,9 @@
 # Homepage
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Welcome to the documentation space for djismgaming!
 
-## Markdown code examples :smile:
+Here I'll have various snippets of code and documentation on my homelab journey and all things IT/DT
 
-### inline code
+I like getting my hands into docker containers and applications for specific scenarios.
 
-Some `code` goes here.
-
-### code blocks
-
-``` bash
-echo env > .bash_env
-```
-
-### code highlight with line highlights
-
-``` yaml hl_lines="4"
-services:
-  nginx:
-    container_name: nginx
-    image: linuxserver/nginx
-    ports:
-      - 80:80
-```
+Take a look around and you could find something you were looking for!
