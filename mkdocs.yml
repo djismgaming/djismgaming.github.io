@@ -9,8 +9,8 @@ theme:
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.sections
-    - navigation.expand
+    # - navigation.sections
+    # - navigation.expand
     - navigation.footer
     - navigation.path
     - navigation.instant
