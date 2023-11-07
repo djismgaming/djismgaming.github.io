@@ -46,6 +46,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://djismgaming.github.io/documentation/documentation/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://djismgaming.github.io/documentation/commands/add-container-to-additional-network-on-unraid/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
