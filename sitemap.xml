@@ -101,6 +101,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://djismgaming.github.io/documentation/docker/docker-backup/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/documentation/docker/docker-restore/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/documentation/docker/docker-start/</loc>
+         <lastmod>2023-11-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://djismgaming.github.io/documentation/markdown/reference/</loc>
          <lastmod>2023-11-07</lastmod>
          <changefreq>daily</changefreq>
