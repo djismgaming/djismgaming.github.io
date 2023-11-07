@@ -22,7 +22,7 @@ theme:
     - search.highlight
     - search.share
     - content.tabs.link
-    - content.code.annotation
+    - content.code.annotate
     - content.code.copy
     - content.action.edit
     - content.action.view
@@ -51,6 +51,8 @@ plugins:
       post_excerpt: required
       post_excerpt_max_authors: 0
       post_excerpt_separator: <!-- more -->
+      archive: false
+      categories: false
   - social
   - tags
   - git-authors
