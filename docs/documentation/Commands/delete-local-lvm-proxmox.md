@@ -2,7 +2,7 @@
 
 !!! note
 
-    You'll need to move all disks, isos, etc. from this local-lvm storage to the local before performing these steps.
+    You'll need to move all disks, isos, etc. from the `local-lvm` storage to the `local` storage before performing these steps.
 
 1. Delete local-lvm from CLI:
 
@@ -10,7 +10,7 @@
 lvremove /dev/pve/data
 ```
 
-1. Reallocate the space
+2. Reallocate the space
 
 ``` bash
 lvresize -l +100%FREE /dev/pve/root
