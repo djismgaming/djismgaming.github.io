@@ -11,4 +11,6 @@ The custom docker network needs to be created first with `docker network create 
 Edit the container on advanced view.
 Under "Post Arguments" enter/add the following command:
 
-`&& docker network connect <networkname> <containername>`
+``` bash
+&& docker network connect <networkname> <containername>
+```
