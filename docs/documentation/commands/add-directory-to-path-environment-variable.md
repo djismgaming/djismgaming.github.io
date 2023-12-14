@@ -7,4 +7,6 @@ description: >-
 
 # add directory to PATH environment variable
 
-`echo 'export PATH="$HOME/.local/bin:$PATH"' >> .bashrc`
+``` bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> .bashrc
+```

@@ -63,7 +63,7 @@ Using the command below will make the same process like ssh-copy-id would but wo
 I use the Windows Terminal for this process. Just edit the line with your data. Specifically change the part `user@host.address` with your correct remote user and host IP/hostname.
 
 ``` bash
-type .ssh\id_rsa.pub | ssh user@host.address "mkdir .ssh && cat >> .ssh/authorized_keys"
+type .ssh\id_rsa.pub | ssh user@host.address "mkdir -p .ssh && cat >> .ssh/authorized_keys"
 ```
 
 This makes it possible to login directly to your remote host by simply using:

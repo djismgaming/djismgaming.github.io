@@ -7,4 +7,6 @@ description: >-
 
 # stop gdm3 in ubuntu desktop install
 
-`sudo service gdm3 stop`
+``` bash
+sudo service gdm3 stop
+```
