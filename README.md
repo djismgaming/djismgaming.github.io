@@ -2,6 +2,7 @@
 
 Visit me at [https://djismgaming.github.io](https://djismgaming.github.io)
 
+## notes to self :D
 Install the [GTK for Windows Runtime](https://github.com/tschoonj/GTK-for-Windows-Runtime-Environment-Installer/releases) to avoid `cairo` errors upon executing `mkdocs serve`
 
 Execute on Git Bash
