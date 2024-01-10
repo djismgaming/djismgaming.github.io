@@ -1,6 +1,6 @@
 ---
 draft: false
-date: 2023-10-13
+date: 2024-01-10
 categories:
   # - Gaming
   # - 
@@ -13,6 +13,8 @@ tags:
   # - gaming
   # - origin
   # - EA Desktop
+  - smb
+  - nas
 authors:
   - ismael
 ---
