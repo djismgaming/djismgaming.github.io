@@ -24,6 +24,11 @@ authors:
 If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
 
 With this tip, you’ll make the Proxmox node restore the connection automatically.
+<figure markdown>
+  ![Alt text](../../images/proxmox-smb-remount.png){ width="1000" }
+  <figcaption></figcaption>
+</figure>
+
 <!-- more -->
 In your node’s shell, create a bash script that looks for mount points in `/mnt/pve/` and unmounts them if they become stale:
 
