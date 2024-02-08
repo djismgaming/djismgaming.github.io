@@ -19,7 +19,7 @@ authors:
   - ismael
 ---
 
-# Mount SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox
+# Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox
 
 ## Procedure
 
