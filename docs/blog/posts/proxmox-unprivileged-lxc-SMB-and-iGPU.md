@@ -13,6 +13,8 @@ tags:
   # - gaming
   # - origin
   # - EA Desktop
+  - smb
+  - nas
 authors:
   - ismael
 ---
@@ -27,6 +29,7 @@ Create an unprivileged Debian 12 LXC container.
 
 Inside the LXC container, use the `root` user to create a non-root user with your name. In the case of mine I wanted to add it to the ``sudo`` and ``docker`` groups after installing Docker inside the LXC container.
 
+<!-- more -->
 ``` bash
 useradd -s /bin/bash -m -G sudo,docker ismael
 ```
