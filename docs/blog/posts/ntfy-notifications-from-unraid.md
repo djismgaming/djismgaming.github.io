@@ -3,7 +3,7 @@ draft: true
 date: 2023-10-28
 categories:
   # - Gaming
-  # - unRAID
+  - unRAID
   # - Proxmox
 tags:
   - linux
