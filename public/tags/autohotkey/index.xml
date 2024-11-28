@@ -19,10 +19,7 @@
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</guid>
       <description>&lt;h1 id=&#34;iphone-style-add-a-period-after-entering-two-spaces-in-windows-10&#34;&gt;iPhone style: Add a period after entering two spaces in Windows 10&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/iphone-period.png){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
+&lt;p&gt;![[iphone-period.png]]&lt;/p&gt;
 &lt;p&gt;Today we type even more than ever during this pandemic. Working from home is a default now.&lt;/p&gt;
 &lt;p&gt;This AutoHotKey script will add a period after you end a sentence by using two spaces. iPhone style period ending on Windows 10!&lt;/p&gt;
 &lt;!-- more --&gt;
