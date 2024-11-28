@@ -29,5 +29,22 @@
 &lt;h2 id=&#34;generate-your-private-and-public-keys-in-your-windows-powershell-shell&#34;&gt;Generate your private and public keys in your Windows PowerShell shell&lt;/h2&gt;
 &lt;p&gt;Execute the command below in Windows Terminal or any other terminal in Windows:&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>iPhone style: Add a period after entering two spaces in Windows 10</title>
+      <link>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</guid>
+      <description>&lt;h1 id=&#34;iphone-style-add-a-period-after-entering-two-spaces-in-windows-10&#34;&gt;iPhone style: Add a period after entering two spaces in Windows 10&lt;/h1&gt;
+&lt;figure markdown&gt;
+  ![Alt text](../../images/iphone-period.png){ width=&#34;400&#34; }
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Today we type even more than ever during this pandemic. Working from home is a default now.&lt;/p&gt;
+&lt;p&gt;This AutoHotKey script will add a period after you end a sentence by using two spaces. iPhone style period ending on Windows 10!&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ah&#34; data-lang=&#34;ah&#34;&gt;;iPhone style period after space
+:*?: ::. `
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to add this to a *.ahk file (maybe in Documents) after installing AutoHotKey which you can get from &lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;https://www.autohotkey.com/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

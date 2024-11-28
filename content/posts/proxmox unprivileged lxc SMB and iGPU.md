@@ -1,4 +1,5 @@
 ---
+title: Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox
 draft: false
 date: 2024-02-08
 tags:
@@ -6,7 +7,6 @@ tags:
   - proxmox
   - smb
   - nas
-title: Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox
 ---
 ## Procedure
 
