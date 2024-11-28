@@ -5,7 +5,7 @@ import shutil
 # Paths (using raw strings to handle Windows backslashes correctly)
 posts_dir = r"C:\Users\Ismael\Documents\notes\ismaellablog\posts"
 attachments_dir = r"C:\Users\Ismael\Documents\notes\attachments"
-static_images_dir = r"C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\images"
+static_images_dir = r"C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\assets\images"
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):

@@ -2,7 +2,8 @@ baseURL: https://djismgaming.github.io/
 languageCode: en-us
 title: djismgaming
 theme: ["PaperMod"]
-paginate: 5
+pagination:
+  pagerSize: 5
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -177,7 +178,7 @@ params:
       url: "https://ko-fi.com/djismgaming"
 
   editPost:
-    URL: "https://github.com/djismgaming/djismgaming.github.io/content"
+    URL: "https://github.com/djismgaming/djismgaming.github.io/tree/main/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
