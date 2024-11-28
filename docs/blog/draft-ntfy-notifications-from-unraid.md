@@ -21,4 +21,4 @@ curl --insecure \
   -d "$OUTPUT" \
   -H "Title: Dangling images cleaned on $(hostname)" \
   $topicurl
-  ```
+```
