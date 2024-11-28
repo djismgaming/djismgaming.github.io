@@ -1,18 +1,11 @@
 ---
-draft: true
-date: 2023-10-28
+draft: false
+date: 2024-10-28
 categories:
-  # - Gaming
   - unRAID
-  # - Proxmox
 tags:
   - linux
   - proxmox
-  # - autohotkey
-  # - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
 authors:
   - ismael
 ---
