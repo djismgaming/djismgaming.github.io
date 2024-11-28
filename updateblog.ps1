@@ -38,19 +38,19 @@ foreach ($cmd in $requiredCommands) {
     }
 }
 
-# Step 1: Check if Git is initialized, and initialize if necessary
-# if (-not (Test-Path ".git")) {
-#     Write-Host "Initializing Git repository..."
-#     git init
-#     git remote add origin $myrepo
-# } else {
-#     Write-Host "Git repository already initialized."
-#     $remotes = git remote
-#     if (-not ($remotes -contains 'origin')) {
-#         Write-Host "Adding remote origin..."
-#         git remote add origin $myrepo
-#     }
-# }
+Step 1: Check if Git is initialized, and initialize if necessary
+if (-not (Test-Path ".git")) {
+    Write-Host "Initializing Git repository..."
+    git init
+    git remote add origin $myrepo
+} else {
+    Write-Host "Git repository already initialized."
+    $remotes = git remote
+    if (-not ($remotes -contains 'origin')) {
+        Write-Host "Adding remote origin..."
+        git remote add origin $myrepo
+    }
+}
 
 # Step 2: Sync posts from Obsidian to Hugo content folder using Robocopy
 Write-Host "Syncing posts from Obsidian..."
@@ -80,6 +80,8 @@ if ($LASTEXITCODE -ge 8) {
     Write-Error "Robocopy failed with exit code $LASTEXITCODE"
     exit 1
 }
+
+Write-Output $robocopyResult
 
 # Step 3: Process Markdown files with Python script to handle image links
 Write-Host "Processing image links in Markdown files..."
