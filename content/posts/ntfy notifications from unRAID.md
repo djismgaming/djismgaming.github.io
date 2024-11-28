@@ -21,12 +21,6 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
 ---
-
-
-
-
-# ntfy notifications from unRAID
-
 ``` bash
 #!/bin/bash
 OUTPUT=$(docker image prune -af | tail -1)
