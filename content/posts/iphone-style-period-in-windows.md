@@ -1,15 +1,11 @@
 ---
-draft: false
+draft: true
 date: 2023-10-13
 categories:
-  # - Gaming
   - Windows
 tags:
   - autohotkey
   - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
 authors:
   - ismael
 ---

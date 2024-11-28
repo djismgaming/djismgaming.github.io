@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hello on djismgaming</title>
-    <link>https://djismgaming.github.io/categories/hello/</link>
+    <link>http://localhost:1313/categories/hello/</link>
     <description>Recent content in Hello on djismgaming</description>
     <image>
       <title>djismgaming</title>
-      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
-      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://djismgaming.github.io/categories/hello/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/hello/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/journey-start/</link>
+      <link>http://localhost:1313/posts/journey-start/</link>
       <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/journey-start/</guid>
+      <guid>http://localhost:1313/posts/journey-start/</guid>
       <description>&lt;h1 id=&#34;this-is-a-start&#34;&gt;This is a start&lt;/h1&gt;
 &lt;p&gt;I started this little site to document little snippets I use regularly so I don&amp;rsquo;t loose them. I figured it would be a good thing to share them with the world!&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -26,9 +26,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/hello-world/</link>
+      <link>http://localhost:1313/posts/hello-world/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/hello-world/</guid>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
       <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world&lt;/h1&gt;
 &lt;p&gt;This is the default&lt;!-- more --&gt; first post for &lt;code&gt;mkdocs&lt;/code&gt;. &amp;#x1f609;&lt;/p&gt;
 &lt;p&gt;It was good to start with something familiar!&lt;/p&gt;</description>

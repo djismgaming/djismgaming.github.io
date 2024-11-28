@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on djismgaming</title>
-    <link>https://djismgaming.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on djismgaming</description>
     <image>
       <title>djismgaming</title>
-      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
-      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
+      <url>http://localhost:1313/images/papermod-cover.png</url>
+      <link>http://localhost:1313/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://djismgaming.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ntfy notifications from unRAID</title>
-      <link>https://djismgaming.github.io/posts/ntfy-notifications-from-unraid/</link>
+      <link>http://localhost:1313/posts/ntfy-notifications-from-unraid/</link>
       <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/ntfy-notifications-from-unraid/</guid>
+      <guid>http://localhost:1313/posts/ntfy-notifications-from-unraid/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;OUTPUT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;docker image prune -af &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tail -1&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;topicurl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://ntfy.example.com/topic
@@ -30,23 +30,25 @@
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
+      <link>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
-      <description>&lt;h1 id=&#34;mount-an-smb-share-and-use-igpu-on-an-unprivileged-debian-12-lxc-container-in-proxmox&#34;&gt;Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox&lt;/h1&gt;
-&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
-&lt;p&gt;Prere&lt;/p&gt;
+      <guid>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
+      <description>&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
+&lt;p&gt;Pre-requisites:&lt;/p&gt;
 &lt;p&gt;Create an unprivileged Debian 12 LXC container.&lt;/p&gt;
 &lt;p&gt;Inside the LXC container, use the &lt;code&gt;root&lt;/code&gt; user to create a non-root user with your name. In the case of mine I wanted to add it to the &lt;code&gt;sudo&lt;/code&gt; and &lt;code&gt;docker&lt;/code&gt; groups after installing Docker inside the LXC container.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;useradd -s /bin/bash -m -G sudo,docker ismael
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change the user password to whatever you need.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change the user password to whatever you need.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su ismael
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;passwd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This user&amp;rsquo;s default &lt;code&gt;UID:GID&lt;/code&gt; will be &lt;code&gt;1000:1000&lt;/code&gt;. If not, create it with:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
+      <link>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
+      <guid>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
       <description>&lt;h1 id=&#34;proxmox--automatically-restore-smbcifs-share-connections&#34;&gt;Proxmox | automatically restore SMB/CIFS share connections&lt;/h1&gt;
 &lt;p&gt;If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.&lt;/p&gt;
 &lt;p&gt;With this tip, you’ll make the Proxmox node restore the connection automatically.&lt;/p&gt;
@@ -59,9 +61,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/windows-ssh-copy-id/</link>
+      <link>http://localhost:1313/posts/windows-ssh-copy-id/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/windows-ssh-copy-id/</guid>
+      <guid>http://localhost:1313/posts/windows-ssh-copy-id/</guid>
       <description>&lt;h1 id=&#34;set-up-your-ssh-key-based-authentication-from-windows-in-a-single-line&#34;&gt;Set up your SSH key-based authentication from Windows in a single line&lt;/h1&gt;
 &lt;figure markdown&gt;
   ![Alt text](../../images/linux-filesystem.webp){ width=&#34;400&#34; }
@@ -75,26 +77,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</link>
+      <link>http://localhost:1313/posts/speedtouch-modem-as-a-router/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</guid>
-      <description>&lt;h1 id=&#34;iphone-style-add-a-period-after-entering-two-spaces-in-windows-10&#34;&gt;iPhone style: Add a period after entering two spaces in Windows 10&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/iphone-period.png){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Today we type even more than ever during this pandemic. Working from home is a default now.&lt;/p&gt;
-&lt;p&gt;This AutoHotKey script will add a period after you end a sentence by using two spaces. iPhone style period ending on Windows 10!&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ah&#34; data-lang=&#34;ah&#34;&gt;;iPhone style period after space
-:*?: ::. `
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to add this to a *.ahk file (maybe in Documents) after installing AutoHotKey which you can get from &lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;https://www.autohotkey.com/&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</link>
-      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</guid>
+      <guid>http://localhost:1313/posts/speedtouch-modem-as-a-router/</guid>
       <description>&lt;h1 id=&#34;how-to-use-a-speedtouch-modem-as-a-router&#34;&gt;How to use a SpeedTouch modem as a router&lt;/h1&gt;
 &lt;figure markdown&gt;
   ![Alt text](../../images/speedtouch.jpg){ width=&#34;400&#34; }
@@ -109,9 +94,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
+      <link>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
+      <guid>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
       <description>&lt;h1 id=&#34;ssh-tunneling-for-easy-access-to-web-based-apps-form-servers&#34;&gt;SSH Tunneling for easy access to web-based apps form servers&lt;/h1&gt;
 &lt;figure markdown&gt;
   ![Alt text](../../images/ssh-tunnel.jpg){ width=&#34;400&#34; }
@@ -122,26 +107,6 @@
 &lt;p&gt;Run this command in your local machine:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -L 9000:127.0.0.1:9000 my_user@my-remote-server
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will forward port 9000 to our local machine:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/journey-start/</link>
-      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/journey-start/</guid>
-      <description>&lt;h1 id=&#34;this-is-a-start&#34;&gt;This is a start&lt;/h1&gt;
-&lt;p&gt;I started this little site to document little snippets I use regularly so I don&amp;rsquo;t loose them. I figured it would be a good thing to share them with the world!&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;These will include mainly Linux-related topics but ultimately anything tech-related will be included.&lt;/p&gt;
-&lt;p&gt;I chose &lt;code&gt;mkdocs&lt;/code&gt; since it uses Markdown files as the source. I&amp;rsquo;m very familiar with Markdown and regularly use it to create very organized and usable note files in between code.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/hello-world/</link>
-      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/hello-world/</guid>
-      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world&lt;/h1&gt;
-&lt;p&gt;This is the default&lt;!-- more --&gt; first post for &lt;code&gt;mkdocs&lt;/code&gt;. &amp;#x1f609;&lt;/p&gt;
-&lt;p&gt;It was good to start with something familiar!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
