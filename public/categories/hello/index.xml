@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hello on djismgaming</title>
+    <link>https://djismgaming.github.io/categories/hello/</link>
+    <description>Recent content in Hello on djismgaming</description>
+    <image>
+      <title>djismgaming</title>
+      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
+      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://djismgaming.github.io/categories/hello/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://djismgaming.github.io/posts/journey-start/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/posts/journey-start/</guid>
+      <description>&lt;h1 id=&#34;this-is-a-start&#34;&gt;This is a start&lt;/h1&gt;
+&lt;p&gt;I started this little site to document little snippets I use regularly so I don&amp;rsquo;t loose them. I figured it would be a good thing to share them with the world!&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;These will include mainly Linux-related topics but ultimately anything tech-related will be included.&lt;/p&gt;
+&lt;p&gt;I chose &lt;code&gt;mkdocs&lt;/code&gt; since it uses Markdown files as the source. I&amp;rsquo;m very familiar with Markdown and regularly use it to create very organized and usable note files in between code.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://djismgaming.github.io/posts/hello-world/</link>
+      <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/posts/hello-world/</guid>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello world&lt;/h1&gt;
+&lt;p&gt;This is the default&lt;!-- more --&gt; first post for &lt;code&gt;mkdocs&lt;/code&gt;. &amp;#x1f609;&lt;/p&gt;
+&lt;p&gt;It was good to start with something familiar!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -35,7 +35,7 @@ foreach ($cmd in $requiredCommands) {
     }
 }
 
-Step 1: Check if Git is initialized, and initialize if necessary
+# Step 1: Check if Git is initialized, and initialize if necessary
 if (-not (Test-Path ".git")) {
     Write-Host "Initializing Git repository..."
     git init

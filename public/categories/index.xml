@@ -2,15 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on djismgaming</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://djismgaming.github.io/categories/</link>
     <description>Recent content in Categories on djismgaming</description>
     <image>
       <title>djismgaming</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
+      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://djismgaming.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxmox</title>
+      <link>https://djismgaming.github.io/categories/proxmox/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>https://djismgaming.github.io/categories/development/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware</title>
+      <link>https://djismgaming.github.io/categories/hardware/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/hardware/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hardware Hacking</title>
+      <link>https://djismgaming.github.io/categories/hardware-hacking/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/hardware-hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://djismgaming.github.io/categories/linux/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>https://djismgaming.github.io/categories/networking/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/networking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://djismgaming.github.io/categories/windows/</link>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hello</title>
+      <link>https://djismgaming.github.io/categories/hello/</link>
+      <pubDate>Thu, 12 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/categories/hello/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>
