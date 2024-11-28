@@ -160,10 +160,11 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox Procedure Prere
+    <p>Procedure Pre-requisites:
 Create an unprivileged Debian 12 LXC container.
 Inside the LXC container, use the root user to create a non-root user with your name. In the case of mine I wanted to add it to the sudo and docker groups after installing Docker inside the LXC container.
 useradd -s /bin/bash -m -G sudo,docker ismael Change the user password to whatever you need.
+su ismael passwd This user’s default UID:GID will be 1000:1000. If not, create it with:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-02-08 00:00:00 +0000 UTC'>February 8, 2024</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Theme PaperMod</footer>

@@ -18,14 +18,16 @@
       <link>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
-      <description>&lt;h1 id=&#34;mount-an-smb-share-and-use-igpu-on-an-unprivileged-debian-12-lxc-container-in-proxmox&#34;&gt;Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox&lt;/h1&gt;
-&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
-&lt;p&gt;Prere&lt;/p&gt;
+      <description>&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
+&lt;p&gt;Pre-requisites:&lt;/p&gt;
 &lt;p&gt;Create an unprivileged Debian 12 LXC container.&lt;/p&gt;
 &lt;p&gt;Inside the LXC container, use the &lt;code&gt;root&lt;/code&gt; user to create a non-root user with your name. In the case of mine I wanted to add it to the &lt;code&gt;sudo&lt;/code&gt; and &lt;code&gt;docker&lt;/code&gt; groups after installing Docker inside the LXC container.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;useradd -s /bin/bash -m -G sudo,docker ismael
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change the user password to whatever you need.&lt;/p&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change the user password to whatever you need.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su ismael
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;passwd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This user&amp;rsquo;s default &lt;code&gt;UID:GID&lt;/code&gt; will be &lt;code&gt;1000:1000&lt;/code&gt;. If not, create it with:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
