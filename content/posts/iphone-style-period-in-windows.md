@@ -2,13 +2,9 @@
 title: iPhone style - Add a period after entering two spaces in Windows 10
 draft: false
 date: 2023-10-13
-categories:
-  - Windows
 tags:
   - autohotkey
   - windows
-authors:
-  - ismael
 ---
 
 # iPhone style: Add a period after entering two spaces in Windows 10
