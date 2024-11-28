@@ -1,13 +1,11 @@
 ---
 title: ntfy notifications from unRAID
-draft: false
+draft: true
 date: 2024-10-28
-# weight: 1
+weight: 1
 tags: 
-  - selfhosted
-  - ntfy
 author: djismgaming
-showToc: no
+showToc: true
 TocOpen: false
 hidemeta: false
 comments: false
@@ -34,6 +32,10 @@ editPost:
   appendFilePath: true
 ---
 
+
+
+
+# ntfy notifications from unRAID
 
 ``` bash
 #!/bin/bash

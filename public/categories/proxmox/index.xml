@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Proxmox on djismgaming</title>
+    <link>https://djismgaming.github.io/categories/proxmox/</link>
+    <description>Recent content in Proxmox on djismgaming</description>
+    <image>
+      <title>djismgaming</title>
+      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
+      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.139.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://djismgaming.github.io/categories/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
+      <description>&lt;h1 id=&#34;proxmox--automatically-restore-smbcifs-share-connections&#34;&gt;Proxmox | automatically restore SMB/CIFS share connections&lt;/h1&gt;
+&lt;p&gt;If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.&lt;/p&gt;
+&lt;p&gt;With this tip, you’ll make the Proxmox node restore the connection automatically.&lt;/p&gt;
+&lt;figure markdown&gt;
+  ![Alt text](../../images/proxmox-smb-remount.png){ width=&#34;1000&#34; }
+  &lt;figcaption&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;In your node’s shell, create a bash script that looks for mount points in &lt;code&gt;/mnt/pve/&lt;/code&gt; and unmounts them if they become stale:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
