@@ -2,10 +2,7 @@
 
 # Set variables for Obsidian to Hugo copy
 $sourcePath = "C:\Users\Ismael\Documents\notes\ismaellablog\posts"
-$destinationPath = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog"
-
-$sourcePath1 = "C:\Users\Ismael\Documents\notes\ismaellablog\documentation"
-$destinationPath1 = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\documentation"
+$destinationPath = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\content\posts"
 
 # Set Github repo 
 $myrepo = "djismgaming.github.io"
@@ -68,13 +65,6 @@ if (-not (Test-Path $destinationPath)) {
 # Use Robocopy to mirror the directories
 $robocopyOptions = @('/MIR', '/Z', '/W:5', '/R:3')
 $robocopyResult = robocopy $sourcePath $destinationPath @robocopyOptions
-
-if ($LASTEXITCODE -ge 8) {
-    Write-Error "Robocopy failed with exit code $LASTEXITCODE"
-    exit 1
-}
-
-$robocopyResult = robocopy $sourcePath1 $destinationPath1 @robocopyOptions
 
 if ($LASTEXITCODE -ge 8) {
     Write-Error "Robocopy failed with exit code $LASTEXITCODE"
