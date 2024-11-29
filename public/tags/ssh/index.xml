@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ssh on djismgaming</title>
-    <link>http://localhost:1313/tags/ssh/</link>
+    <link>https://djismgaming.github.io/tags/ssh/</link>
     <description>Recent content in Ssh on djismgaming</description>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Oct 2023 00:00:00 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://djismgaming.github.io/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set up your SSH key-based authentication from Windows in a single line</title>
-      <link>http://localhost:1313/posts/windows-ssh-copy-id/</link>
+      <link>https://djismgaming.github.io/posts/windows-ssh-copy-id/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 -0400</pubDate>
-      <guid>http://localhost:1313/posts/windows-ssh-copy-id/</guid>
+      <guid>https://djismgaming.github.io/posts/windows-ssh-copy-id/</guid>
       <description>&lt;p&gt;Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.&lt;/p&gt;
 &lt;p&gt;For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.&lt;/p&gt;
 &lt;h2 id=&#34;generate-your-private-and-public-keys-in-your-windows-powershell-shell&#34;&gt;Generate your private and public keys in your Windows PowerShell shell&lt;/h2&gt;
