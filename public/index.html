@@ -64,9 +64,7 @@
   <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
-      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="djismgaming">
 <meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 
@@ -191,14 +189,30 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">ntfy notifications from unRAID
+    <h2 class="entry-hint-parent">ntfy notifications from unRAID using curl
     </h2>
   </header>
   <div class="entry-content">
-    <p>UseHugoToc: true #!/bin/bash OUTPUT=$(docker image prune -af | tail -1) topicurl=https://ntfy.example.com/topic curl --insecure \ -d &#34;$OUTPUT&#34; \ -H &#34;Title: Dangling images cleaned on $ </p>
+    <p>#!/bin/bash OUTPUT=$(docker image prune -af | tail -1) topicurl=https://ntfy.example.com/topic curl --insecure \ -d &#34;$OUTPUT&#34; \ -H &#34;Title: Dangling images cleaned on $(hostname)&#34; \ $topicurl </p>
   </div>
-  <footer class="entry-footer"><span title='2024-10-28 00:00:00 +0000 UTC'>October 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;24 words&nbsp;·&nbsp;djismgaming</footer>
-  <a class="entry-link" aria-label="post link to ntfy notifications from unRAID" href="http://localhost:1313/posts/ntfy-notifications-from-unraid/"></a>
+  <footer class="entry-footer"><span title='2024-10-28 00:00:00 +0000 UTC'>October 28, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to ntfy notifications from unRAID using curl" href="http://localhost:1313/posts/ntfy-notifications-from-unraid/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Fix your SLOW Origin Games download speeds – UPDATED
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>UPDATE 2023.10.13 - This post is here just for history’s sake as Origin is basically deprecated at this point in time. It’s always nice to keep history though. :wink:
+UPDATE 2021.08.20 – This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.
+ORIGINAL POST BELOW:
+Origin can be a bit sluggish at times. But we have to live with it no matter what (for now maybe? who knows).
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-10-13 00:00:00 +0000 UTC'>October 13, 2024</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to Fix your SLOW Origin Games download speeds – UPDATED" href="http://localhost:1313/posts/fix-your-slow-origin-game-downloads-speed/"></a>
 </article>
 
 <article class="post-entry"> 
@@ -207,8 +221,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>nas Procedure Pre-requisites:
-Create an unprivileged Debian 12 LXC container.
+    <p>Pre-requisites: Create an unprivileged Debian 12 LXC container.
 Inside the LXC container, use the root user to create a non-root user with your name. In the case of mine I wanted to add it to the sudo and docker groups after installing Docker inside the LXC container.
 useradd -s /bin/bash -m -G sudo,docker ismael Change the user password to whatever you need.
 su ismael passwd This user’s default UID:GID will be 1000:1000. If not, create it with:
@@ -220,48 +233,33 @@ su ismael passwd This user’s default UID:GID will be 1000:1000. If not, create
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Proxmox | automatically restore SMB/CIFS share connections
     </h2>
   </header>
   <div class="entry-content">
-    <p>Proxmox | automatically restore SMB/CIFS share connections If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
+    <p>If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
 With this tip, you’ll make the Proxmox node restore the connection automatically.
-![Alt text](../../images/proxmox-smb-remount.png){ width=&#34;1000&#34; }In your node’s shell, create a bash script that looks for mount points in /mnt/pve/ and unmounts them if they become stale:
+In your node’s shell, create a bash script that looks for mount points in /mnt/pve/ and unmounts them if they become stale:
+nano remount.sh Put this content into the file:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0000 UTC'>January 10, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/"></a>
+  <a class="entry-link" aria-label="post link to Proxmox | automatically restore SMB/CIFS share connections" href="http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/"></a>
 </article>
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Set up your SSH key-based authentication from Windows in a single line
     </h2>
   </header>
   <div class="entry-content">
-    <p>Set up your SSH key-based authentication from Windows in a single line ![Alt text](../../images/linux-filesystem.webp){ width=&#34;400&#34; }Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.
+    <p>Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.
 For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.
 Generate your private and public keys in your Windows PowerShell shell Execute the command below in Windows Terminal or any other terminal in Windows:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2023-10-18 00:00:00 +0000 UTC'>October 18, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/windows-ssh-copy-id/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>How to use a SpeedTouch modem as a router ![Alt text](../../images/speedtouch.jpg){ width=&#34;400&#34; }A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.
-Run these commands towards the SpeedTouch modem using telnet:
-telnet &lt;modem ip address&gt; Commands to set up a SpeedTouch DSL modem as a router:
-For firmware versions 5.3 and lower:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-10-13 00:00:00 +0000 UTC'>October 13, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/speedtouch-modem-as-a-router/"></a>
+  <a class="entry-link" aria-label="post link to Set up your SSH key-based authentication from Windows in a single line" href="http://localhost:1313/posts/windows-ssh-copy-id/"></a>
 </article>
 <footer class="page-footer">
   <nav class="pagination">

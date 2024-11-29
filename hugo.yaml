@@ -7,12 +7,12 @@ pagination:
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+# buildDrafts: false
+# buildFuture: false
+# buildExpired: false
+# enableEmoji: true
+# pygmentsUseClasses: true
+mainsections: ["posts"]
 
 minify:
   disableXML: true
@@ -131,17 +131,17 @@ params:
   # disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
-  # disableSpecial1stPost: true
-  displayFullLangName: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   ShowAllPagesInArchive: true
+  # disableSpecial1stPost: true
+  # displayFullLangName: true
   ShowPageNums: true
-  ShowToc: true
+  # ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  # images: ["images/papermod-cover.png"]
 
   profileMode:
     enabled: false
@@ -214,12 +214,12 @@ params:
   #     minMatchCharLength: 0
   #     keys: ["title", "permalink", "summary", "content"]
 
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
+# markup:
+#   goldmark:
+#     renderer:
+#       unsafe: true
+#   highlight:
+#     noClasses: false
     # anchorLineNos: true
     # codeFences: true
     # guessSyntax: true

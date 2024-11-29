@@ -1,34 +1,18 @@
 ---
+title: Set up your SSH key-based authentication from Windows in a single line
 draft: false
 date: 2023-10-18
-categories:
-  # - Gaming
-  - Development
-  # - Proxmox
 tags:
   - linux
-  # - proxmox
-  # - autohotkey
   - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
   - ssh
-authors:
-  - ismael
 ---
 
-# Set up your SSH key-based authentication from Windows in a single line
-
-<figure markdown>
-  ![Alt text](../../images/linux-filesystem.webp){ width="400" }
-  <figcaption></figcaption>
-</figure>
 
 Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.
 
 For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.
-<!-- more -->
+
 ## Generate your private and public keys in your Windows PowerShell shell
 
 Execute the command below in Windows Terminal or any other terminal in Windows:
@@ -41,14 +25,9 @@ This one will generate the necessary keys in your local host. These will be loca
 
 You can access it in this location on Windows by using the key combination `Win + R` and then entering this text in the Run window:
 
-``` bash
+```bash
 %userprofile%/.ssh/
 ```
-
-<figure markdown>
-  ![Windows Run window showing the location to the generated ssh keys](../../images/run-window-profile-ssh-keys.png){ width="400" }
-  <figcaption>Run window showing the location to the generated ssh keys</figcaption>
-</figure>
 
 That directory will include:
 - your generated private key `id_rsa`
