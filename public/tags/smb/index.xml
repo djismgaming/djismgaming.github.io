@@ -6,12 +6,12 @@
     <description>Recent content in Smb on djismgaming</description>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 08 Feb 2024 00:00:00 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/smb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox</title>
       <link>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
-      <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 08 Feb 2024 00:00:00 -0400</pubDate>
       <guid>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
       <description>&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites:&lt;/h2&gt;
 &lt;p&gt;Create an unprivileged Debian 12 LXC container.&lt;/p&gt;
@@ -25,7 +25,7 @@
     <item>
       <title>Proxmox | automatically restore SMB/CIFS share connections</title>
       <link>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
-      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 -0400</pubDate>
       <guid>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
       <description>&lt;p&gt;If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.&lt;/p&gt;
 &lt;p&gt;With this tip, you’ll make the Proxmox node restore the connection automatically.&lt;/p&gt;

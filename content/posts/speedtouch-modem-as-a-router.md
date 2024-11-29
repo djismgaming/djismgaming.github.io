@@ -1,5 +1,5 @@
 ---
-title: SpeedTouch modem as a router
+title: speedtouch modem as a router
 draft: false
 date: 2023-10-13
 tags:
@@ -11,12 +11,11 @@ tags:
 ---
 
 
-
-A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.
+A speedtouch modem, like a 2007 model Thompson Speedtouch 585V6, is a DSL modem. But with a little tweak, it can be used as a router for your network.
 
 Run these commands towards the SpeedTouch modem using `telnet`:
 
-``` bash
+```bash
 telnet <modem ip address>
 ```
 
@@ -24,7 +23,7 @@ Commands to set up a SpeedTouch DSL modem as a router:
 
 For firmware versions 5.3 and lower:
 
-``` bash
+```bash
 ppp relay flush
 ppp flush
 eth flush

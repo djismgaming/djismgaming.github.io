@@ -44,9 +44,11 @@ CdnOverride=akamai
 Upon start you will be asked if you want to import the file you just created on your desktop.
 Press Yes.
 This will overwrite your old config-file.
-Notes
 
-The EACore.ini file is deleted from your desktop as soon as you import it. If you ever want to leave R&D mode you need to go to the location where Origin is installed and delete the EACore.ini file found there.
+#### Note
+
+- The EACore.ini file is deleted from your desktop as soon as you import it. If you ever want to leave R&D mode you need to go to the location where Origin is installed and delete the EACore.ini file found there.
+
 It has been reported that having Origin in R&D-mode will increase your download speed.
 This made a huge change for me. The Origin client started with a display of “R&D | PR” in the upper right corner. Then trying the remainder of the patch download I was amazed to see 8.83 MB/s of download speed in Origin.
 

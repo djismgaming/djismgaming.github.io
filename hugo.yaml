@@ -4,7 +4,7 @@ title: djismgaming
 theme: ["PaperMod"]
 pagination:
   pagerSize: 5
-timeZone: America\Puerto_Rico
+timeZone: America/Puerto_Rico
 enableInlineShortcodes: true
 enableRobotsTXT: true
 # buildDrafts: false

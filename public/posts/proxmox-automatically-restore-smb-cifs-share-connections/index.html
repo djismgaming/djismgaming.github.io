@@ -69,8 +69,8 @@ nano remount.sh Put this content into the file:">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-01-10T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-01-10T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-01-10T00:00:00-04:00">
+    <meta property="article:modified_time" content="2024-01-10T00:00:00-04:00">
     <meta property="article:tag" content="Linux">
     <meta property="article:tag" content="Proxmox">
     <meta property="article:tag" content="Smb">
@@ -117,8 +117,8 @@ Put this content into the file:">
   "articleBody": "If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.\nWith this tip, you’ll make the Proxmox node restore the connection automatically.\nIn your node’s shell, create a bash script that looks for mount points in /mnt/pve/ and unmounts them if they become stale:\nnano remount.sh Put this content into the file:\n#!/bin/bash list=$(ls /mnt/pve) for i in $list do status=$(ls /mnt/pve/$i 2\u003e\u00261) if [[ $status =~ .*Stale.* ]] then umount /mnt/pve/$i fi done Remember to make the script executable by the user creating it:\nchmod 766 /root/remount.sh Add a cron job for this script to run automatically:\n* * * * * /root/remount.sh \u003e/dev/null 2\u003e\u00261 With that, any SMB/CIFS connections should be restored automatically. That is because the service pvestatd tries to remount every SMB share every 10 seconds.\nThis approach could work for NFS shares too. I have not tested that possibility.\n",
   "wordCount" : "162",
   "inLanguage": "en",
-  "datePublished": "2024-01-10T00:00:00Z",
-  "dateModified": "2024-01-10T00:00:00Z",
+  "datePublished": "2024-01-10T00:00:00-04:00",
+  "dateModified": "2024-01-10T00:00:00-04:00",
   "author":{
     "@type": "Person",
     "name": "Theme PaperMod"
@@ -216,7 +216,7 @@ Put this content into the file:">
     <h1 class="post-title entry-hint-parent">
       Proxmox | automatically restore SMB/CIFS share connections
     </h1>
-    <div class="post-meta"><span title='2024-01-10 00:00:00 +0000 UTC'>January 10, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod&nbsp;|&nbsp;<a href="https://github.com/djismgaming/djismgaming.github.io/tree/main/content/posts/proxmox-automatically-restore-SMB-CIFS-share-connections.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+    <div class="post-meta"><span title='2024-01-10 00:00:00 -0400 AST'>January 10, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod&nbsp;|&nbsp;<a href="https://github.com/djismgaming/djismgaming.github.io/tree/main/content/posts/proxmox-automatically-restore-SMB-CIFS-share-connections.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
