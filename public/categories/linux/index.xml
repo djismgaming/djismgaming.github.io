@@ -2,49 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on djismgaming</title>
-    <link>https://djismgaming.github.io/categories/linux/</link>
+    <link>http://localhost:1313/categories/linux/</link>
     <description>Recent content in Linux on djismgaming</description>
-    <image>
-      <title>djismgaming</title>
-      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
-      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 13 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://djismgaming.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</link>
+      <title>SSH Tunneling for easy access to web-based apps form servers</title>
+      <link>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</guid>
-      <description>&lt;h1 id=&#34;how-to-use-a-speedtouch-modem-as-a-router&#34;&gt;How to use a SpeedTouch modem as a router&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/speedtouch.jpg){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;Run these commands towards the SpeedTouch modem using &lt;code&gt;telnet&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;telnet &amp;lt;modem ip address&amp;gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Commands to set up a SpeedTouch DSL modem as a router:&lt;/p&gt;
-&lt;p&gt;For firmware versions 5.3 and lower:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
-      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
-      <description>&lt;h1 id=&#34;ssh-tunneling-for-easy-access-to-web-based-apps-form-servers&#34;&gt;SSH Tunneling for easy access to web-based apps form servers&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/ssh-tunnel.jpg){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch &amp;#x1f609;&lt;/p&gt;
-&lt;!-- more --&gt;
+      <guid>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
+      <description>&lt;p&gt;I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:&lt;/p&gt;
 &lt;p&gt;Run this command in your local machine:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -L 9000:127.0.0.1:9000 my_user@my-remote-server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will forward port 9000 to our local machine:&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -L 9000:127.0.0.1:9000 my_user@my-remote-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will forward port 9000 to our local machine:&lt;/p&gt;
+&lt;p&gt;http://localhost:9000 or http://127.0.0.1:9000&lt;/p&gt;
+&lt;p&gt;At this local address the Portainer web UI from the remote server will appear.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,38 +1,19 @@
 ---
+title: SpeedTouch modem as a router
 draft: false
 date: 2023-10-13
-categories:
-  # - Gaming
-  # - 
-  - Linux
-  - Networking
-  - Hardware
-  - Hardware Hacking
 tags:
   - linux
   - networking
   - hardware
   - hardware hacking
   - routers
-  # - proxmox
-  # - autohotkey
-  # - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
-authors:
-  - ismael
 ---
 
-# How to use a SpeedTouch modem as a router
 
-<figure markdown>
-  ![Alt text](../../images/speedtouch.jpg){ width="400" }
-  <figcaption></figcaption>
-</figure>
 
 A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.
-<!-- more -->
+
 Run these commands towards the SpeedTouch modem using `telnet`:
 
 ``` bash

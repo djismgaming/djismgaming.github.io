@@ -2,125 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on djismgaming</title>
-    <link>https://djismgaming.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on djismgaming</description>
-    <image>
-      <title>djismgaming</title>
-      <url>https://djismgaming.github.io/images/papermod-cover.png</url>
-      <link>https://djismgaming.github.io/images/papermod-cover.png</link>
-    </image>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://djismgaming.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ntfy notifications from unRAID</title>
-      <link>https://djismgaming.github.io/posts/ntfy-notifications-from-unraid/</link>
+      <title>ntfy notifications from unRAID using curl</title>
+      <link>http://localhost:1313/posts/ntfy-notifications-from-unraid/</link>
       <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/ntfy-notifications-from-unraid/</guid>
-      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;OUTPUT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;docker image prune -af &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; tail -1&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;topicurl&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;https://ntfy.example.com/topic
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl --insecure &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -d &lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$OUTPUT&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  -H &lt;span class=&#34;s2&#34;&gt;&amp;#34;Title: Dangling images cleaned on &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;$(&lt;/span&gt;hostname&lt;span class=&#34;k&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  &lt;span class=&#34;nv&#34;&gt;$topicurl&lt;/span&gt;
+      <guid>http://localhost:1313/posts/ntfy-notifications-from-unraid/</guid>
+      <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;OUTPUT&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;docker image prune -af | tail -1&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;topicurl&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;https://ntfy.example.com/topic
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl --insecure &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  -d &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;$OUTPUT&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Title: Dangling images cleaned on &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;hostname&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  $topicurl
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     <item>
+      <title>Fix your SLOW Origin Games download speeds – UPDATED</title>
+      <link>http://localhost:1313/posts/fix-your-slow-origin-game-downloads-speed/</link>
+      <pubDate>Sun, 13 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/fix-your-slow-origin-game-downloads-speed/</guid>
+      <description>&lt;p&gt;UPDATE 2023.10.13 - This post is here just for history&amp;rsquo;s sake as Origin is basically deprecated at this point in time. It&amp;rsquo;s always nice to keep history though. :wink:&lt;/p&gt;
+&lt;p&gt;UPDATE 2021.08.20 – This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.&lt;/p&gt;
+&lt;p&gt;ORIGINAL POST BELOW:&lt;/p&gt;
+&lt;p&gt;Origin can be a bit sluggish at times. But we have to live with it no matter what (for now maybe? who knows).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox</title>
-      <link>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
+      <link>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</link>
       <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
-      <description>&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
-&lt;p&gt;Pre-requisites:&lt;/p&gt;
+      <guid>http://localhost:1313/posts/proxmox-unprivileged-lxc-smb-and-igpu/</guid>
+      <description>&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites:&lt;/h2&gt;
 &lt;p&gt;Create an unprivileged Debian 12 LXC container.&lt;/p&gt;
 &lt;p&gt;Inside the LXC container, use the &lt;code&gt;root&lt;/code&gt; user to create a non-root user with your name. In the case of mine I wanted to add it to the &lt;code&gt;sudo&lt;/code&gt; and &lt;code&gt;docker&lt;/code&gt; groups after installing Docker inside the LXC container.&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;useradd -s /bin/bash -m -G sudo,docker ismael
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;useradd -s /bin/bash -m -G sudo,docker ismael
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Change the user password to whatever you need.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;su ismael
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;passwd
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;su ismael
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;passwd
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This user&amp;rsquo;s default &lt;code&gt;UID:GID&lt;/code&gt; will be &lt;code&gt;1000:1000&lt;/code&gt;. If not, create it with:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
+      <title>Proxmox | automatically restore SMB/CIFS share connections</title>
+      <link>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</link>
       <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
-      <description>&lt;h1 id=&#34;proxmox--automatically-restore-smbcifs-share-connections&#34;&gt;Proxmox | automatically restore SMB/CIFS share connections&lt;/h1&gt;
-&lt;p&gt;If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.&lt;/p&gt;
+      <guid>http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/</guid>
+      <description>&lt;p&gt;If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.&lt;/p&gt;
 &lt;p&gt;With this tip, you’ll make the Proxmox node restore the connection automatically.&lt;/p&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/proxmox-smb-remount.png){ width=&#34;1000&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;In your node’s shell, create a bash script that looks for mount points in &lt;code&gt;/mnt/pve/&lt;/code&gt; and unmounts them if they become stale:&lt;/p&gt;</description>
+&lt;p&gt;In your node’s shell, create a bash script that looks for mount points in &lt;code&gt;/mnt/pve/&lt;/code&gt; and unmounts them if they become stale:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nano remount.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Put this content into the file:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/windows-ssh-copy-id/</link>
+      <title>Set up your SSH key-based authentication from Windows in a single line</title>
+      <link>http://localhost:1313/posts/windows-ssh-copy-id/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/windows-ssh-copy-id/</guid>
-      <description>&lt;h1 id=&#34;set-up-your-ssh-key-based-authentication-from-windows-in-a-single-line&#34;&gt;Set up your SSH key-based authentication from Windows in a single line&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/linux-filesystem.webp){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.&lt;/p&gt;
+      <guid>http://localhost:1313/posts/windows-ssh-copy-id/</guid>
+      <description>&lt;p&gt;Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.&lt;/p&gt;
 &lt;p&gt;For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.&lt;/p&gt;
-&lt;!-- more --&gt;
 &lt;h2 id=&#34;generate-your-private-and-public-keys-in-your-windows-powershell-shell&#34;&gt;Generate your private and public keys in your Windows PowerShell shell&lt;/h2&gt;
 &lt;p&gt;Execute the command below in Windows Terminal or any other terminal in Windows:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</link>
+      <title>SpeedTouch modem as a router</title>
+      <link>http://localhost:1313/posts/speedtouch-modem-as-a-router/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/speedtouch-modem-as-a-router/</guid>
-      <description>&lt;h1 id=&#34;how-to-use-a-speedtouch-modem-as-a-router&#34;&gt;How to use a SpeedTouch modem as a router&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/speedtouch.jpg){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.&lt;/p&gt;
-&lt;!-- more --&gt;
+      <guid>http://localhost:1313/posts/speedtouch-modem-as-a-router/</guid>
+      <description>&lt;p&gt;A speedtouch modem, like the one pictured, is a DSL modem. But with a little tweak, it can be used as a router for your network.&lt;/p&gt;
 &lt;p&gt;Run these commands towards the SpeedTouch modem using &lt;code&gt;telnet&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;telnet &amp;lt;modem ip address&amp;gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;telnet &amp;lt;modem ip address&amp;gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Commands to set up a SpeedTouch DSL modem as a router:&lt;/p&gt;
-&lt;p&gt;For firmware versions 5.3 and lower:&lt;/p&gt;</description>
+&lt;p&gt;For firmware versions 5.3 and lower:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ppp relay flush
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ppp flush
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eth flush
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;atm flush
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;atm phonebook flush
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eth bridge ifdelete intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethport4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eth ifadd intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethport4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eth ifconfig intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethport4 dest&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethif4 retry&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt; group&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;default
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;eth ifattach intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethport4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip ifadd intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port dest&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ethport4
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ip ifconfig intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port hwaddr&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;00:11:42:0c:65:1d &lt;span style=&#34;color:#75715e&#34;&gt;# This line is needed if MAC address cloning is required, otherwise it&amp;#39;s not necessary&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dhcp client ifadd intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dhcp client ifattach intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nat ifconfig intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port translation&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;enabled
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nat ifattach intf&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;WAN_Port
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;saveall
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For firmware versions 6.1 and higher:&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
+      <title>SSH Tunneling for easy access to web-based apps form servers</title>
+      <link>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
       <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
-      <description>&lt;h1 id=&#34;ssh-tunneling-for-easy-access-to-web-based-apps-form-servers&#34;&gt;SSH Tunneling for easy access to web-based apps form servers&lt;/h1&gt;
-&lt;figure markdown&gt;
-  ![Alt text](../../images/ssh-tunnel.jpg){ width=&#34;400&#34; }
-  &lt;figcaption&gt;&lt;/figcaption&gt;
-&lt;/figure&gt;
-&lt;p&gt;I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch &amp;#x1f609;&lt;/p&gt;
-&lt;!-- more --&gt;
+      <guid>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
+      <description>&lt;p&gt;I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:&lt;/p&gt;
 &lt;p&gt;Run this command in your local machine:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -L 9000:127.0.0.1:9000 my_user@my-remote-server
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will forward port 9000 to our local machine:&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>iPhone style - Add a period after entering two spaces in Windows 10</title>
-      <link>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</link>
-      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://djismgaming.github.io/posts/iphone-style-period-in-windows/</guid>
-      <description>&lt;h1 id=&#34;iphone-style-add-a-period-after-entering-two-spaces-in-windows-10&#34;&gt;iPhone style: Add a period after entering two spaces in Windows 10&lt;/h1&gt;
-&lt;p&gt;![[iphone-period.png]]&lt;/p&gt;
-&lt;p&gt;Today we type even more than ever during this pandemic. Working from home is a default now.&lt;/p&gt;
-&lt;p&gt;This AutoHotKey script will add a period after you end a sentence by using two spaces. iPhone style period ending on Windows 10!&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-ah&#34; data-lang=&#34;ah&#34;&gt;;iPhone style period after space
-:*?: ::. `
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You need to add this to a *.ahk file (maybe in Documents) after installing AutoHotKey which you can get from &lt;a href=&#34;https://www.autohotkey.com/&#34;&gt;https://www.autohotkey.com/&lt;/a&gt;&lt;/p&gt;</description>
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh -L 9000:127.0.0.1:9000 my_user@my-remote-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This will forward port 9000 to our local machine:&lt;/p&gt;
+&lt;p&gt;http://localhost:9000 or http://127.0.0.1:9000&lt;/p&gt;
+&lt;p&gt;At this local address the Portainer web UI from the remote server will appear.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,25 +1,10 @@
 ---
-title: ntfy notifications from unRAID
+title: ntfy notifications from unRAID using curl
 draft: false
 date: 2024-10-28
 weight: 1
 tags: 
-author: djismgaming
-showToc: true
-TocOpen: false
-hidemeta: false
-comments: false
-description: 
-disableHLJS: false
-disableShare: false
-hideSummary: false
-searchHidden: false
-ShowReadingTime: true
-ShowBreadCrumbs: true
-ShowPostNavLinks: true
-ShowWordCount: true
-ShowRssButtonInSectionTermList: true
-UseHugoToc: true
+  - ntfy
 ---
 ``` bash
 #!/bin/bash

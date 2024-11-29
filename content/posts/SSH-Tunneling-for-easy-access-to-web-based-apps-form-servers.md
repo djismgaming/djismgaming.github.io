@@ -1,31 +1,17 @@
 ---
+title: SSH Tunneling for easy access to web-based apps form servers
 draft: false
 date: 2023-10-13
 categories:
-  # - Gaming
-  # - 
   - Linux
 tags:
   - linux
-  # - proxmox
-  # - autohotkey
-  # - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
 authors:
   - ismael
 ---
 
-# SSH Tunneling for easy access to web-based apps form servers
-
-<figure markdown>
-  ![Alt text](../../images/ssh-tunnel.jpg){ width="400" }
-  <figcaption></figcaption>
-</figure>
-
 I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:
-<!-- more -->
+
 Run this command in your local machine:
 
 ``` bash

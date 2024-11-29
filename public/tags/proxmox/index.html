@@ -62,9 +62,7 @@
   <meta property="og:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
-      <meta property="og:image" content="http://localhost:1313/images/papermod-cover.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/images/papermod-cover.png">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Proxmox">
 <meta name="twitter:description" content="Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod">
 
@@ -160,8 +158,7 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>nas Procedure Pre-requisites:
-Create an unprivileged Debian 12 LXC container.
+    <p>Pre-requisites: Create an unprivileged Debian 12 LXC container.
 Inside the LXC container, use the root user to create a non-root user with your name. In the case of mine I wanted to add it to the sudo and docker groups after installing Docker inside the LXC container.
 useradd -s /bin/bash -m -G sudo,docker ismael Change the user password to whatever you need.
 su ismael passwd This user’s default UID:GID will be 1000:1000. If not, create it with:
@@ -173,17 +170,18 @@ su ismael passwd This user’s default UID:GID will be 1000:1000. If not, create
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">
+    <h2 class="entry-hint-parent">Proxmox | automatically restore SMB/CIFS share connections
     </h2>
   </header>
   <div class="entry-content">
-    <p>Proxmox | automatically restore SMB/CIFS share connections If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
+    <p>If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
 With this tip, you’ll make the Proxmox node restore the connection automatically.
-![Alt text](../../images/proxmox-smb-remount.png){ width=&#34;1000&#34; }In your node’s shell, create a bash script that looks for mount points in /mnt/pve/ and unmounts them if they become stale:
+In your node’s shell, create a bash script that looks for mount points in /mnt/pve/ and unmounts them if they become stale:
+nano remount.sh Put this content into the file:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2024-01-10 00:00:00 +0000 UTC'>January 10, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
-  <a class="entry-link" aria-label="post link to " href="http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/"></a>
+  <a class="entry-link" aria-label="post link to Proxmox | automatically restore SMB/CIFS share connections" href="http://localhost:1313/posts/proxmox-automatically-restore-smb-cifs-share-connections/"></a>
 </article>
     </main>
     
