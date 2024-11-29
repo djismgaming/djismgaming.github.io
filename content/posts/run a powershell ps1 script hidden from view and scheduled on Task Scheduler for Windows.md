@@ -1,6 +1,6 @@
 ---
 title: run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows
-draft: true
+draft: false
 date: 2024-11-29
 tags:
   - windows
