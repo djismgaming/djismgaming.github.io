@@ -5,7 +5,7 @@ date: 2024-11-29
 tags:
   - windows
   - powershell
-showToc: true
+showToc: false
 ---
 
 ## The script launcher
