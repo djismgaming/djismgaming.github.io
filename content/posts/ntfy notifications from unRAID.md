@@ -2,8 +2,7 @@
 title: ntfy notifications from unRAID using curl
 draft: false
 date: 2024-10-28
-weight: 1
-tags: 
+tags:
   - ntfy
 ---
 ``` bash
