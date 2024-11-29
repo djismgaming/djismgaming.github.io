@@ -1,5 +1,5 @@
 ---
-title: Fix your SLOW Origin Games download speeds – UPDATED
+title: Fix your SLOW Origin Games download speeds – UPDATEDx
 draft: false
 date: 2024-10-13
 tags:
