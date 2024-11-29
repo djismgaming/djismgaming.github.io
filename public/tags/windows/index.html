@@ -154,6 +154,21 @@
 
 <article class="post-entry tag-entry"> 
   <header class="entry-header">
+    <h2 class="entry-hint-parent">run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The script launcher We need a script launcher as PowerShell scripts run in the foreground and we don’t want the window of this script to appear at all.
+This one can be a .vbs file that will be setup like this
+In Task Scheduler Action: Start a program Program/script: wscript Add arguments (optional): &lt;path\to\the\.ps1\file&gt; Here is the .vbs script:
+command = &#34;powershell.exe -ExecutionPolicy Bypass C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\blogupdate.ps1&#34; set shell = CreateObject(&#34;WScript.Shell&#34;) shell.Run command,0 </p>
+  </div>
+  <footer class="entry-footer"><span title='2024-11-29 00:00:00 -0400 AST'>November 29, 2024</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Theme PaperMod</footer>
+  <a class="entry-link" aria-label="post link to run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows" href="https://djismgaming.github.io/posts/run-a-powershell-ps1-script-hidden-from-view-and-scheduled-on-task-scheduler-for-windows/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
     <h2 class="entry-hint-parent">Set up your SSH key-based authentication from Windows in a single line
     </h2>
   </header>

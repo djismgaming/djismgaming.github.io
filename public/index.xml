@@ -6,7 +6,7 @@
     <description>Recent content on djismgaming</description>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2024 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 -0400</lastBuildDate>
     <atom:link href="https://djismgaming.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ntfy notifications from unRAID using curl</title>
@@ -22,6 +22,31 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  -H &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Title: Dangling images cleaned on &lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;hostname&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;&lt;/span&gt;  $topicurl
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows</title>
+      <link>https://djismgaming.github.io/posts/run-a-powershell-ps1-script-hidden-from-view-and-scheduled-on-task-scheduler-for-windows/</link>
+      <pubDate>Fri, 29 Nov 2024 00:00:00 -0400</pubDate>
+      <guid>https://djismgaming.github.io/posts/run-a-powershell-ps1-script-hidden-from-view-and-scheduled-on-task-scheduler-for-windows/</guid>
+      <description>&lt;h2 id=&#34;the-script-launcher&#34;&gt;The script launcher&lt;/h2&gt;
+&lt;p&gt;We need a script launcher as PowerShell scripts run in the foreground and we don&amp;rsquo;t want the window of this script to appear at all.&lt;/p&gt;
+&lt;p&gt;This one can be a &lt;code&gt;.vbs&lt;/code&gt; file that will be setup like this&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Task Scheduler
+&lt;ul&gt;
+&lt;li&gt;Action: Start a program&lt;/li&gt;
+&lt;li&gt;Program/script: &lt;code&gt;wscript&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add arguments (optional): &lt;code&gt;&amp;lt;path\to\the\.ps1\file&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the &lt;code&gt;.vbs&lt;/code&gt; script:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vbs&#34; data-lang=&#34;vbs&#34;&gt;command = &amp;#34;powershell.exe  -ExecutionPolicy Bypass  C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\blogupdate.ps1&amp;#34;
+
+set shell = CreateObject(&amp;#34;WScript.Shell&amp;#34;)
+
+shell.Run command,0
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     <item>
       <title>Fix your SLOW Origin Games download speeds – UPDATED</title>
