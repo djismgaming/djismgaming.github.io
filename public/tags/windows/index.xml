@@ -6,12 +6,12 @@
     <description>Recent content in Windows on djismgaming</description>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set up your SSH key-based authentication from Windows in a single line</title>
       <link>http://localhost:1313/posts/windows-ssh-copy-id/</link>
-      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 -0400</pubDate>
       <guid>http://localhost:1313/posts/windows-ssh-copy-id/</guid>
       <description>&lt;p&gt;Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.&lt;/p&gt;
 &lt;p&gt;For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.&lt;/p&gt;

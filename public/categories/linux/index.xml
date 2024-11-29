@@ -6,12 +6,12 @@
     <description>Recent content in Linux on djismgaming</description>
     <generator>Hugo -- 0.139.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Oct 2023 00:00:00 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH Tunneling for easy access to web-based apps form servers</title>
       <link>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</link>
-      <pubDate>Fri, 13 Oct 2023 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 13 Oct 2023 00:00:00 -0400</pubDate>
       <guid>http://localhost:1313/posts/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</guid>
       <description>&lt;p&gt;I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:&lt;/p&gt;
 &lt;p&gt;Run this command in your local machine:&lt;/p&gt;
