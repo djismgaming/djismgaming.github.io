@@ -1,7 +1,7 @@
 site_name: djismgaming's tech home
 site_url: https://djismgaming.github.io
 repo_url: http://www.github.com/djismgaming/djismgaming.github.io
-repo_name: djismgaming.github.io
+repo_name: djismgaming/djismgaming.github.io
 edit_uri: edit/main/docs/
 site_description: Web home for tech things!
 
@@ -68,6 +68,13 @@ theme:
 plugins:
   - blog:
       post_excerpt: optional
+      pagination: true
+      pagination_per_page: 5
+      pagination_format: "$link_first $link_previous ~2~ $link_next $link_last"
+      draft: false
+      draft_on_serve: true
+      draft_if_future_date: true
+
   - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
