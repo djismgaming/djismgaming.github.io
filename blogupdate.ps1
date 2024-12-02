@@ -1,6 +1,6 @@
 # Define source and destination paths
 $source = "C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts\"
-$destination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog"
+$destination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog\posts"
 
 # Run robocopy with /MIR option
 robocopy $source $destination /MIR
