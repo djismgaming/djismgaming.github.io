@@ -1,6 +1,6 @@
 # Define source and destination paths
 $source = "C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts\"
-$destination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\content\posts"
+$destination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog"
 
 # Run robocopy with /MIR option
 robocopy $source $destination /MIR
@@ -8,9 +8,6 @@ robocopy $source $destination /MIR
 # Navigate to the Git repository's root
 $repoRoot = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io"
 Set-Location $repoRoot
-
-# Execute Hugo to build the site
-hugo
 
 # Stage all changes in Git
 git add .

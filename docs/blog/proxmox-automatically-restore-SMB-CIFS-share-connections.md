@@ -1,36 +1,18 @@
 ---
+title: Proxmox | automatically restore SMB/CIFS share connections
 draft: false
 date: 2024-01-10
-categories:
-  # - Gaming
-  # - 
-  - Proxmox
 tags:
   - linux
   - proxmox
-  # - autohotkey
-  # - windows
-  # - gaming
-  # - origin
-  # - EA Desktop
   - smb
   - nas
-authors:
-  - ismael
 ---
-
-# Proxmox | automatically restore SMB/CIFS share connections
 
 If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.
 
 With this tip, you’ll make the Proxmox node restore the connection automatically.
 
-<figure markdown>
-  ![Alt text](../../images/proxmox-smb-remount.png){ width="1000" }
-  <figcaption></figcaption>
-</figure>
-
-<!-- more -->
 In your node’s shell, create a bash script that looks for mount points in `/mnt/pve/` and unmounts them if they become stale:
 
 ``` bash
