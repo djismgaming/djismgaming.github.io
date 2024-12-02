@@ -2,7 +2,14 @@
 
 # Set variables for Obsidian to Hugo copy
 $sourcePath = "C:\Users\Ismael\Documents\notes\ismaellablog\posts"
+<<<<<<< HEAD
 $destinationPath = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\content\posts"
+=======
+$destinationPath = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog"
+
+$sourcePath1 = "C:\Users\Ismael\Documents\notes\ismaellablog\documentation"
+$destinationPath1 = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\documentation"
+>>>>>>> parent of 6e9bf28 (change to hugo)
 
 # Set Github repo 
 $myrepo = "djismgaming.github.io"
@@ -36,6 +43,7 @@ foreach ($cmd in $requiredCommands) {
 }
 
 # Step 1: Check if Git is initialized, and initialize if necessary
+<<<<<<< HEAD
 if (-not (Test-Path ".git")) {
     Write-Host "Initializing Git repository..."
     git init
@@ -48,6 +56,20 @@ if (-not (Test-Path ".git")) {
         git remote add origin $myrepo
     }
 }
+=======
+# if (-not (Test-Path ".git")) {
+#     Write-Host "Initializing Git repository..."
+#     git init
+#     git remote add origin $myrepo
+# } else {
+#     Write-Host "Git repository already initialized."
+#     $remotes = git remote
+#     if (-not ($remotes -contains 'origin')) {
+#         Write-Host "Adding remote origin..."
+#         git remote add origin $myrepo
+#     }
+# }
+>>>>>>> parent of 6e9bf28 (change to hugo)
 
 # Step 2: Sync posts from Obsidian to Hugo content folder using Robocopy
 Write-Host "Syncing posts from Obsidian..."
@@ -71,7 +93,16 @@ if ($LASTEXITCODE -ge 8) {
     exit 1
 }
 
+<<<<<<< HEAD
 Write-Output $robocopyResult
+=======
+$robocopyResult = robocopy $sourcePath1 $destinationPath1 @robocopyOptions
+
+if ($LASTEXITCODE -ge 8) {
+    Write-Error "Robocopy failed with exit code $LASTEXITCODE"
+    exit 1
+}
+>>>>>>> parent of 6e9bf28 (change to hugo)
 
 # Step 3: Process Markdown files with Python script to handle image links
 Write-Host "Processing image links in Markdown files..."

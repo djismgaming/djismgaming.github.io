@@ -3,9 +3,15 @@ import re
 import shutil
 
 # Paths (using raw strings to handle Windows backslashes correctly)
+<<<<<<< HEAD
 posts_dir = r"C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts"
 attachments_dir = r"C:\Users\Ismael\Documents\notes\attachments"
 static_images_dir = r"C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\assets\images"
+=======
+posts_dir = r"C:\Users\Ismael\Documents\notes\ismaellablog\posts"
+attachments_dir = r"C:\Users\Ismael\Documents\notes\attachments"
+static_images_dir = r"C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\images"
+>>>>>>> parent of 6e9bf28 (change to hugo)
 
 # Step 1: Process each markdown file in the posts directory
 for filename in os.listdir(posts_dir):
@@ -21,7 +27,11 @@ for filename in os.listdir(posts_dir):
         # Step 3: Replace image links and ensure URLs are correctly formatted
         for image in images:
             # Prepare the Markdown-compatible link with %20 replacing spaces
+<<<<<<< HEAD
             markdown_image = f"![Image Description](/assets/images/{image.replace(' ', '%20')})"
+=======
+            markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
+>>>>>>> parent of 6e9bf28 (change to hugo)
             content = content.replace(f"[[{image}]]", markdown_image)
             
             # Step 4: Copy the image to the Hugo static/images directory if it exists
