@@ -5,7 +5,10 @@ date: 2024-11-29
 tags:
   - windows
   - powershell
-showToc: false
+authors:
+  - djismgaming
+categories:
+  - Windows
 ---
 
 ## The script launcher

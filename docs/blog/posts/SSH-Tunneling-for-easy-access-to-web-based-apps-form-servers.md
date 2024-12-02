@@ -7,7 +7,7 @@ categories:
 tags:
   - linux
 authors:
-  - ismael
+  - djismgaming
 ---
 
 I had to access Portainer in my cloud VM to modify docker containers. I can access it now via any web browser with SSL (https) no problem, but this way is good in a pinch :wink:
