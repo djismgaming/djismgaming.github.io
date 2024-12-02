@@ -7,6 +7,11 @@ tags:
   - proxmox
   - smb
   - nas
+authors:
+  - djismgaming
+categories:
+  - Linux
+  - Selfhosting
 ---
 
 ## Procedure

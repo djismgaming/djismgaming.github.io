@@ -6,6 +6,11 @@ tags:
   - linux
   - windows
   - ssh
+authors:
+  - djismgaming
+categories:
+  - Windows
+  - Linux
 ---
 
 

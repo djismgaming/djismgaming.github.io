@@ -7,6 +7,11 @@ tags:
   - proxmox
   - smb
   - nas
+authors:
+  - djismgaming
+categories:
+  - Linux
+  - Selfhosting
 ---
 
 If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed.

@@ -1,15 +1,15 @@
 ---
 template: home.html
-title: Material for MkDocs
+title: Home
 social:
   cards_layout_options:
-    title: Documentation that simply works
+    title: Welcome to my documentation space
 ---
 
-## Welcome to the documentation space for djismgaming
+## Welcome to my documentation space
 
 Here I'll have various snippets of code and documentation on my homelab journey and all things IT/DT
 
 I like getting my hands into docker containers and applications for specific scenarios.
 
-Take a look around and you could find something you were looking for!
+Take a look around and you could find something interesting!

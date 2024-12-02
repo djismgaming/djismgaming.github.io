@@ -6,8 +6,13 @@ tags:
   - linux
   - networking
   - hardware
-  - hardware hacking
+  - hardware
+  - hacking
   - routers
+authors:
+  - djismgaming
+categories:
+  - Linux
 ---
 
 

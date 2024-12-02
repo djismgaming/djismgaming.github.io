@@ -5,6 +5,10 @@ date: 2024-10-13
 tags:
   - origin
   - gaming
+authors:
+  - djismgaming
+categories:
+  - Gaming
 ---
 UPDATE 2023.10.13 - This post is here just for history's sake as Origin is basically deprecated at this point in time. It's always nice to keep history though. :wink:
 

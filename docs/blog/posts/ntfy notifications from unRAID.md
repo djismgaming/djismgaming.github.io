@@ -4,6 +4,10 @@ draft: false
 date: 2024-10-28
 tags:
   - ntfy
+authors:
+  - djismgaming
+categories:
+  - Selfhosting
 ---
 ``` bash
 #!/bin/bash

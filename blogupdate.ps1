@@ -1,9 +1,16 @@
+# Robocopy.exe C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\documentation\ C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\documentation /mir
+# Robocopy.exe C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts\ C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog\posts /mir
+
 # Define source and destination paths
-$source = "C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts\"
-$destination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog\posts"
+$posts = "C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\posts\"
+$postsdestination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\blog\posts"
+
+$documentation = "C:\Users\Ismael\Documents\notes\sites\djismgaming.github.io\documentation\"
+$documentationdestination = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\docs\documentation\"
 
 # Run robocopy with /MIR option
-robocopy $source $destination /MIR
+robocopy $posts $postsdestination /MIR
+robocopy $documentation $documentationdestination /MIR
 
 # Navigate to the Git repository's root
 $repoRoot = "C:\Users\Ismael\Documents\GitHub\djismgaming.github.io"

@@ -4,6 +4,9 @@ repo_url: http://www.github.com/djismgaming/djismgaming.github.io
 repo_name: djismgaming/djismgaming.github.io
 edit_uri: edit/main/docs/
 site_description: Web home for tech things!
+
+copyright: |
+  &copy; 2023 - 2024 <a href="https://github.com/djismgaming"  target="_blank" rel="noopener">Ismael Lamberty</a>
 theme:
   name: material
   custom_dir: material/overrides
@@ -63,11 +66,15 @@ theme:
 
 # Plugins
 plugins:
-  - blog
+  - blog:
+      post_excerpt: optional
+  - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
 
 # Hooks
 hooks:
@@ -135,5 +142,3 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-copyright: |
-  &copy; 2023 - 2024 <a href="https://github.com/djismgaming"  target="_blank" rel="noopener">Ismael Lamberty</a>
