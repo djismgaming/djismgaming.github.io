@@ -1,3 +1,0 @@
-User-agent: *
-Disallow:
-Sitemap: https://djismgaming.github.io/sitemap.xml
