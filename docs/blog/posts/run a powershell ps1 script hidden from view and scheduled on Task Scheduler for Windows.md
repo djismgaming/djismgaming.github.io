@@ -14,7 +14,7 @@ categories:
 ## The script launcher
 
 We need a script launcher as PowerShell scripts run in the foreground and we don't want the window of this script to appear at all.
-
+<!-- more -->
 This one can be a `.vbs` file that will be setup like this
 - In Task Scheduler
 	- Action: Start a program

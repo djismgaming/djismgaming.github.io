@@ -11,7 +11,7 @@ categories:
   - Gaming
 ---
 UPDATE 2023.10.13 - This post is here just for history's sake as Origin is basically deprecated at this point in time. It's always nice to keep history though. :wink:
-
+<!-- more -->
 UPDATE 2021.08.20 – This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.
 
 ORIGINAL POST BELOW:
