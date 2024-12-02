@@ -5,43 +5,47 @@
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/SSH-Tunneling-for-easy-access-to-web-based-apps-form-servers/</loc>
+         <loc>https://djismgaming.github.io/blog/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/fix%20your%20slow%20origin%20game%20downloads%20speed/</loc>
+         <loc>https://djismgaming.github.io/blog/2023/10/13/ssh-tunneling-for-easy-access-to-web-based-apps-form-servers/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/ntfy%20notifications%20from%20unRAID/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/10/13/fix-your-slow-origin-games-download-speeds--updated/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/proxmox%20unprivileged%20lxc%20SMB%20and%20iGPU/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/10/28/ntfy-notifications-from-unraid-using-curl/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/proxmox-automatically-restore-SMB-CIFS-share-connections/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/02/08/mount-an-smb-share-and-use-igpu-on-an-unprivileged-debian-12-lxc-container-in-proxmox/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/proxmox-unprivileged-lxc-SMB-and-iGPU/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/01/10/proxmox--automatically-restore-smbcifs-share-connections/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/run%20a%20powershell%20ps1%20script%20hidden%20from%20view%20and%20scheduled%20on%20Task%20Scheduler%20for%20Windows/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/02/08/mount-an-smb-share-and-use-igpu-on-an-unprivileged-debian-12-lxc-container-in-proxmox/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/speedtouch-modem-as-a-router/</loc>
+         <loc>https://djismgaming.github.io/blog/2024/11/29/run-a-powershell-ps1-script-hidden-from-view-and-scheduled-on-task-scheduler-for-windows/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/windows-ssh-copy-id/</loc>
+         <loc>https://djismgaming.github.io/blog/2023/10/13/speedtouch-modem-as-a-router/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/documentation/documentation/</loc>
+         <loc>https://djismgaming.github.io/blog/2023/10/18/set-up-your-ssh-key-based-authentication-from-windows-in-a-single-line/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/documentation/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
@@ -121,7 +125,27 @@
          <lastmod>2024-12-02</lastmod>
     </url>
     <url>
-         <loc>https://djismgaming.github.io/blog/</loc>
+         <loc>https://djismgaming.github.io/blog/archive/2024/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/blog/archive/2023/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/blog/category/windows/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/blog/category/selfhosting/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/blog/category/gaming/</loc>
+         <lastmod>2024-12-02</lastmod>
+    </url>
+    <url>
+         <loc>https://djismgaming.github.io/blog/category/linux/</loc>
          <lastmod>2024-12-02</lastmod>
     </url>
 </urlset>
