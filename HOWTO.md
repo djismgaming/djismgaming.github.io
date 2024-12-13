@@ -20,3 +20,16 @@ pip install -r requirements.txt
 ``` bash
 mkdocs serve
 ```
+
+## For live development on VSCode
+
+Execute in Git Bash
+
+``` bash
+source .venv/Scripts/activate
+mkdocs serve
+```
+
+Then visit http://127.0.0.1:8000/
+
+Execute `devupdate.ps1` in powershell to update the environment while making live modifications
