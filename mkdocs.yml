@@ -74,7 +74,6 @@ plugins:
       draft: false
       draft_on_serve: true
       draft_if_future_date: true
-
   - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -82,6 +81,8 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       enable_creation_date: true
+  - open-in-new-tab:
+      add_icon: true
 
 # Hooks
 hooks:
