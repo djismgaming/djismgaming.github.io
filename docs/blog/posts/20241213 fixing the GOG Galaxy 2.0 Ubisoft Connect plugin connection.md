@@ -1,6 +1,6 @@
 ---
 title: Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection
-draft: true
+draft: false
 date: 2024-12-13
 weight: 
 tags:
