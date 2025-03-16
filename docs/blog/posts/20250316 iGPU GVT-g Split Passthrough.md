@@ -2,7 +2,11 @@
 title: iGPU GVT-g Split Passthrough
 description: Proxmox iGPU GVT-g split passthrough to VM configuration for hardware acceleration.
 template: comments.html
-tags: [proxmox, igpu, passthrough]
+tags:
+  - proxmox
+  - igpu
+  - passthrough
+date: 2025-03-16
 ---
 
 # iGPU GVT-g Split Passthrough (Intel Integrated Graphics)
@@ -11,7 +15,7 @@ Original post: https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-split
 
 ## Introduction
 
-Intel Integrated Graphics (iGPU) is a GPU that is integrated into the CPU. The GPU is a part of the CPU and is used to render graphics. Proxmox may be configured to use iGPU split passthrough to VM to allow the VM to use the iGPU for hardware acceleration for example using video encoding/decoding and Transcoding for series like [Plex][plex-url], [Emby][emby-url] and [Jellyfin][jellyfin-url].  
+Intel Integrated Graphics (iGPU) is a GPU that is integrated into the CPU. The GPU is a part of the CPU and is used to render graphics. Proxmox may be configured to use iGPU split passthrough to VM to allow the VM to use the iGPU for hardware acceleration for example using video encoding/decoding and Transcoding for series like [Plex][plex-url], [Emby][emby-url] and [Jellyfin][jellyfin-url].  <!-- more -->
 This guide will show you how to configure Proxmox to use iGPU passthrough to VM.
 
 !!! Warning ""
