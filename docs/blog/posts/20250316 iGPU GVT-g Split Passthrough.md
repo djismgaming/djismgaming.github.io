@@ -1,7 +1,6 @@
 ---
 title: iGPU GVT-g Split Passthrough
 description: Proxmox iGPU GVT-g split passthrough to VM configuration for hardware acceleration.
-template: comments.html
 tags:
   - proxmox
   - igpu
