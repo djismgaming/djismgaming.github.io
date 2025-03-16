@@ -25,7 +25,7 @@ git add .
 
 # Create a commit with a message including a timestamp
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-$commitMessage = "New post added on $timestamp"
+$commitMessage = "$timestamp"
 git commit -m $commitMessage
 
 # Optional: Push changes to the remote repository
