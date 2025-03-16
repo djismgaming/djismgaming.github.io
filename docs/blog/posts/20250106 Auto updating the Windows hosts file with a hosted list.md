@@ -16,8 +16,6 @@ hostctl's GitHub page: https://github.com/guumaster/hostctl
 ## How to use hostctl
 Here is a simple example to use this app to update the hosts file with a hosted list on a specific URL.
 
-Inline admonitions on the right:
-
 !!! info inline end "Remember"
 	This application works in multiple OSs. I'm just showing how to use it on Windows as an example.
 
