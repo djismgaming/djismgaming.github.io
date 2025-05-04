@@ -61,4 +61,4 @@ Create the `services.yaml` entry for gethomepage.dev to show server root usage s
 
 At the end it should look something like this:
 
-![mini-docker glances widget](mini-docker-glances-widget.png)
+![mini-docker glances widget](images/mini-docker-glances-widget.png)
