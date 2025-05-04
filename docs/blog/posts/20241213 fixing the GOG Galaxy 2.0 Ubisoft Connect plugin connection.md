@@ -32,7 +32,7 @@ The basics are here for reference:
 - Click on the "Connect" button in the Ubisoft Connect integration settings on GOG Galaxy
 - Upon getting the screen, copy the (1) `appId` and (2) `genomeId` values from the pop-up URL
 
-![Ubisoft login screen](ubisoft-connect-login.png)
+![Ubisoft login screen](images/ubisoft-connect-login.png)
 /// caption
 Image showing the necessary values to copy from the login URL
 ///
@@ -56,7 +56,7 @@ CLUB_GENOME_ID = "5b36b900-65d8-47f3-93c8-86bdaa48ab50"
 !!! info inline end "Remember"
 	Remember that this fix, so far, needs to be re-applied if Ubisoft changes the values on their side
 
-![GOG Galaxy Integration Settings](gog-galaxy-integrations-settings.png)
+![GOG Galaxy Integration Settings](images/gog-galaxy-integrations-settings.png)
 /// caption
 Image showing a working connection to Ubisoft Connect after a successful file modification
 ///
