@@ -5,6 +5,8 @@ tags:
   - glances
   - cron
 draft: false
+date: 2025-05-04
+title: Install glances and keep it running for showing gethomepage.dev system stats
 ---
 
 # Install glances and keep it running for showing gethomepage.dev system stats
