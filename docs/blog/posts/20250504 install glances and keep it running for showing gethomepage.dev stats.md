@@ -7,7 +7,10 @@ tags:
 draft: false
 ---
 
-# install glances and keep it running for showing gethomepage.dev system stats
+# Install glances and keep it running for showing gethomepage.dev system stats
+
+This will make the `glances` application run in the background on every reboot and provide the neccesary metrics for homepage.
+<!-- more -->
 
 Install pip:
 
