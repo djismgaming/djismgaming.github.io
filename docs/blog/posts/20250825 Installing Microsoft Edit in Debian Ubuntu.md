@@ -13,7 +13,7 @@ This little application makes it easier to edit files on the terminal with full 
 <!-- more -->
 
 ???+ note
-	The current version of Edit (1,2,0) is not available via the package manager `apt` yet. This could change at some point in the future, making for an easier deployment.
+	The current version of Edit (1.2.0) is not available via the package manager `apt` yet. This could change at some point in the future, making for an easier deployment.
 
 ## Install Pre-requisites
 
