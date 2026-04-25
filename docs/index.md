@@ -1,6 +1,7 @@
 ---
 template: home.html
 title: Home
+toc: false
 social:
   cards_layout_options:
     title: Welcome to my documentation space
