@@ -1,0 +1,79 @@
+baseURL = 'https://djismgaming.github.io/'
+languageCode = 'en-us'
+title = "djismgaming's tech home"
+theme = "PaperMod"
+
+[minify]
+  disableXML = true
+  tinygo = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+
+[params]
+  description = "Web home for tech things!"
+  author = "Ismael Lamberty"
+  defaultApplying = "content"
+  mode = "auto"
+  colorScheme = ""
+  disableThemeToggle = false
+
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  HideAuthorOnIndex = false
+  canonicalSelfContain = false
+
+  defaultTheme = "auto"
+
+  [params.profileMode]
+    enabled = false
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/djismgaming"
+    weight = 1
+
+  [[params.socialIcons]]
+    name = "docker"
+    url = "https://hub.docker.com/u/djismgaming"
+    weight = 2
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/djismgaming"
+    weight = 3
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/ismaellm/"
+    weight = 4
+
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  pageRef = "/blog"
+  weight = 10
+
+[[menu.main]]
+  identifier = "documentation"
+  name = "Documentation"
+  pageRef = "/documentation"
+  weight = 20
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+
+[params.homeParams]
+  homepage.subtitle = "Web home for tech things!"
+
+[services]
+  [services.rss]
+    limit = 20
