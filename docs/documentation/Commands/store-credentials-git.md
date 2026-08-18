@@ -1,7 +1,7 @@
 ---
 tags:
-  - git
-  - development
+- git
+- development
 ---
 
 # Store remote credentials for a local repository

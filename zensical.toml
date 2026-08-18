@@ -1,0 +1,205 @@
+[project]
+site_url = "https://djismgaming.github.io"
+site_name = "djismgaming's tech home"
+site_description = "Web home for tech things!"
+site_author = "Ismael Lamberty"
+
+copyright = "Copyright &copy; 2023 - 2026 <a href=\"https://github.com/djismgaming\" target=\"_blank\" rel=\"noopener\">Ismael Lamberty</a>"
+
+repo_url = "https://github.com/djismgaming/djismgaming.github.io"
+repo_name = "djismgaming/djismgaming.github.io"
+edit_uri = "edit/main/docs/"
+
+nav = [
+  { "Home" = "index.md" },
+  { Blog = [
+    { "Blog" = "blog/index.md" },
+    { "2025" = [
+      { "Installing Microsoft Edit in Debian or Ubuntu based distros" = "blog/posts/installing-microsoft-edit-debian-ubuntu.md" },
+      { "Install glances and keep it running for showing gethomepage.dev system stats" = "blog/posts/install-glances-gethomepage-stats.md" },
+      { "iGPU GVT-g Split Passthrough" = "blog/posts/igpu-gvt-g-split-passthrough.md" },
+      { "Auto-update the Windows hosts file with a hosted list" = "blog/posts/windows-hosts-file-auto-update.md" },
+    ] },
+    { "2024" = [
+      { "Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection" = "blog/posts/gog-galaxy-ubisoft-connect-plugin.md" },
+      { "Run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows" = "blog/posts/powershell-hidden-script-task-scheduler.md" },
+      { "ntfy notifications from unRAID using curl" = "blog/posts/ntfy-notifications-from-unraid.md" },
+      { "Fix your SLOW Origin Games download speeds - UPDATED" = "blog/posts/fix-origin-game-downloads-speed.md" },
+      { "Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox" = "blog/posts/proxmox-unprivileged-lxc-smb-igpu.md" },
+      { "Proxmox | automatically restore SMB/CIFS share connections" = "blog/posts/proxmox-restore-smb-cifs-share-connections.md" },
+    ] },
+    { "2023" = [
+      { "Set up your SSH key-based authentication from Windows in a single line" = "blog/posts/windows-ssh-copy-id.md" },
+      { "SSH Tunneling for easy access to web-based apps form servers" = "blog/posts/ssh-tunneling-web-apps.md" },
+      { "speedtouch modem as a router" = "blog/posts/speedtouch-modem-as-a-router.md" },
+    ] },
+  ] },
+  { Documentation = [
+    { "Documentation" = "documentation/index.md" },
+    { Commands = [
+      { "add container to additional network on unRAID" = "documentation/Commands/add-container-to-additional-network-on-unraid.md" },
+      { "add directory to PATH environment variable" = "documentation/Commands/add-directory-to-path-environment-variable.md" },
+      { "Add storage to a Turnkey VM like Nextcloud" = "documentation/Commands/add-storage-to-turnkey-vm-nextcloud.md" },
+      { "Caching on nginx" = "documentation/Commands/caching-on-nginx.md" },
+      { "Clear Nextcloud Turnkey VM logs" = "documentation/Commands/clear-nextcloud-turnkey-vm-logs.md" },
+      { "Create a logon task in task scheduler to a specific directory" = "documentation/Commands/create-a-logon-task-in-task-scheduler-to-a-specific-directory.md" },
+      { "create sudo user with access to docker in ubuntu lxc container" = "documentation/Commands/create-sudo-user-in-ubuntu-lxc-container.md" },
+      { "Delete the local-lvm directory from proxmox" = "documentation/Commands/delete-local-lvm-proxmox.md" },
+      { "Extend the root volume in TurnKey Linux Nextcloud appliance VM" = "documentation/Commands/extend-volume-in-turnkey-linux-nextcloud-appliance-vm.md" },
+      { "Grow the boot volume of an oracle VM Ubuntu instance" = "documentation/Commands/grow-boot-volume-oracle-instance.md" },
+      { "linux mitigation disable (debian)" = "documentation/Commands/linux-mitigation-disable-security-considerations-debian.md" },
+      { "no sudo password prompt for current user" = "documentation/Commands/no-sudo-password-prompt-for-current-user.md" },
+      { "pi-hole one line install" = "documentation/Commands/pi-hole-one-line-install.md" },
+      { "specifying a static container IP on the same subnet of an UNRAID host" = "documentation/Commands/specifying-a-static-container-ip-on-the-same-subnet-of-an-unraid-host.md" },
+      { "stop gdm3 in ubuntu desktop install" = "documentation/Commands/stop-gdm3-in-ubuntu-desktop-install.md" },
+      { "Store remote credentials for a local repository" = "documentation/Commands/store-credentials-git.md" },
+      { "ubuntu kernel upgrade" = "documentation/Commands/ubuntu-kernel-upgrade.md" },
+      { "yt-dlp command to record in a different file each time" = "documentation/Commands/yt-dlp-command-to-record-in-a-different-file-each-time-copy.md" },
+      { "yt-dlp command to transcode video to h264 after download" = "documentation/Commands/yt-dlp-command-to-transcode-video-to-h264-after-download.md" },
+    ] },
+    { Docker = [
+      { "docker container backup with ntfy notifications" = "documentation/docker/docker-backup.md" },
+      { "docker container restore with ntfy notifications" = "documentation/docker/docker-restore.md" },
+      { "docker container startup with ntfy notifications" = "documentation/docker/docker-start.md" },
+    ] },
+    { "SAP Scripts" = "documentation/SAP-Scripts/new-table-entries.md" },
+  ] },
+]
+
+[project.theme]
+# variant = "modern"
+favicon = "assets/favicon.png"
+language = "en"
+features = [
+  "announce.dismiss",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+]
+
+[project.theme.icon]
+logo = "lucide/rocket"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to system preference"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/djismgaming"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/docker"
+link = "https://hub.docker.com/u/djismgaming"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/twitter"
+link = "https://twitter.com/djismgaming"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/in/ismaellm/"
+
+[project.extra.tags]
+development = "dev"
+gaming = "game"
+linux = "linux"
+windows = "win"
+proxmox = "proxmox"
+igpu = "igpu"
+passthrough = "io"
+metrics = "chart"
+status = "health"
+glances = "glances"
+cron = "clock"
+git = "git"
+origin = "origin"
+ntfy = "bell"
+selfhosting = "server"
+smb = "folder"
+nas = "hdd"
+networking = "globe"
+hardware = "cpu"
+hacking = "shield"
+routers = "wifi"
+powershell = "terminal"
+ssh = "lock"
+
+[project.theme.icon.tag]
+default = "lucide/hash"
+dev = "lucide/code-2"
+game = "lucide/gamepad-2"
+linux = "fontawesome/brands/linux"
+windows = "fontawesome/brands/windows"
+proxmox = "lucide/server"
+igpu = "lucide/microchip"
+io = "lucide/arrow-left-right"
+chart = "lucide/chart-line"
+health = "lucide/activity"
+glances = "lucide/gauge"
+clock = "lucide/clock"
+git = "lucide/git-branch"
+origin = "lucide/gamepad-2"
+bell = "lucide/bell-ring"
+server = "lucide/server"
+folder = "lucide/folder"
+hdd = "lucide/hard-drive"
+globe = "lucide/globe"
+cpu = "lucide/cpu"
+shield = "lucide/shield"
+wifi = "lucide/wifi"
+terminal = "lucide/terminal"
+lock = "lucide/lock"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc.permalink = true
+pymdownx.arithmatex.generic = true
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.emoji.emoji_generator = "zensical.extensions.emoji.to_svg"
+pymdownx.emoji.emoji_index = "zensical.extensions.emoji.twemoji"
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+pymdownx.tabbed.combine_header_slug = true
+pymdownx.tasklist.custom_checkbox = true
+pymdownx.tilde = {}
