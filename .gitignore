@@ -66,6 +66,3 @@ tmp
 # IDEs & Editors
 .idea
 *~
-
-# Hugo
-public/
