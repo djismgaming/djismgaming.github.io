@@ -1,19 +1,13 @@
 ---
 title: Set up your SSH key-based authentication from Windows in a single line
-draft: false
-date: 2023-10-18
+date: '2023-10-18'
 tags:
-  - linux
-  - windows
-  - ssh
-authors:
-  - djismgaming
-categories:
-  - Windows
-  - Linux
+- linux
+- windows
+- ssh
 ---
+
 Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.
-<!-- more -->
 For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.
 
 ## Generate your private and public keys in your Windows PowerShell shell
