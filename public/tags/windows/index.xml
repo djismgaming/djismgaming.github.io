@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Windows on djismgaming&#39;s tech home</title>
+    <link>http://localhost:1313/tags/windows/</link>
+    <description>Recent content in Windows on djismgaming&#39;s tech home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Auto-update the Windows hosts file with a hosted list</title>
+      <link>http://localhost:1313/blog/auto-update-windows-hosts-file/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/auto-update-windows-hosts-file/</guid>
+      <description>&lt;h2 id=&#34;why-do-this&#34;&gt;Why do this&lt;/h2&gt;
+&lt;p&gt;There are a multitude of reasons to do this or use an application like the one shared here. Maybe there is an application that phones home and you need to test how it behaves when it loses connection with a URL. Or there is a need to set this up to keep a system from accessing unsecure sites/services online.&lt;/p&gt;
+&lt;h2 id=&#34;where-to-get-hostctl-from&#34;&gt;Where to get hostctl from&lt;/h2&gt;
+&lt;p&gt;hostctl&amp;rsquo;s GitHub page: &lt;a href=&#34;https://github.com/guumaster/hostctl&#34;&gt;https://github.com/guumaster/hostctl&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Run a PowerShell ps1 script hidden from view and scheduled on Task Scheduler for Windows</title>
+      <link>http://localhost:1313/blog/powershell-hidden-script-task-scheduler/</link>
+      <pubDate>Fri, 29 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/powershell-hidden-script-task-scheduler/</guid>
+      <description>&lt;h2 id=&#34;the-script-launcher&#34;&gt;The script launcher&lt;/h2&gt;
+&lt;p&gt;We need a script launcher as PowerShell scripts run in the foreground and we don&amp;rsquo;t want the window of this script to appear at all.&lt;/p&gt;
+&lt;p&gt;This one can be a &lt;code&gt;.vbs&lt;/code&gt; file that will be setup like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Task Scheduler
+&lt;ul&gt;
+&lt;li&gt;Action: Start a program&lt;/li&gt;
+&lt;li&gt;Program/script: &lt;code&gt;wscript&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add arguments (optional): &lt;code&gt;&amp;lt;path\to\the\.ps1\file&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the &lt;code&gt;.vbs&lt;/code&gt; script:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-vbs&#34; data-lang=&#34;vbs&#34;&gt;command = &amp;#34;powershell.exe -ExecutionPolicy Bypass C:\Users\Ismael\Documents\GitHub\djismgaming.github.io\blogupdate.ps1&amp;#34;
+
+set shell = CreateObject(&amp;#34;WScript.Shell&amp;#34;)
+
+shell.Run command, 0
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Set up your SSH key-based authentication from Windows in a single line</title>
+      <link>http://localhost:1313/blog/windows-ssh-copy-id/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/windows-ssh-copy-id/</guid>
+      <description>&lt;p&gt;Using Linux directly to interact with Linux servers is pretty great and seamless. But when your daily driver is Windows, this can be a little more cumbersome.&lt;/p&gt;
+&lt;p&gt;For instance, when connecting with the Windows version of OpenSSH there is a way to copy your generated key for simple password-less logins after that.&lt;/p&gt;
+&lt;h2 id=&#34;generate-your-private-and-public-keys-in-your-windows-powershell-shell&#34;&gt;Generate your private and public keys in your Windows PowerShell shell&lt;/h2&gt;
+&lt;p&gt;Execute the command below in Windows Terminal or any other terminal in Windows:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

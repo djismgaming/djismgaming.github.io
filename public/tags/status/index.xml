@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Status on djismgaming&#39;s tech home</title>
+    <link>http://localhost:1313/tags/status/</link>
+    <description>Recent content in Status on djismgaming&#39;s tech home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/status/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install glances and keep it running for showing gethomepage.dev system stats</title>
+      <link>http://localhost:1313/blog/install-glances-for-gethomepage-dev-stats/</link>
+      <pubDate>Sun, 04 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/install-glances-for-gethomepage-dev-stats/</guid>
+      <description>&lt;h1 id=&#34;install-glances-and-keep-it-running-for-showing-gethomepagedev-system-stats&#34;&gt;Install glances and keep it running for showing gethomepage.dev system stats&lt;/h1&gt;
+&lt;p&gt;This will make the &lt;code&gt;glances&lt;/code&gt; application run in the background on every reboot and provide the necessary metrics for homepage.&lt;/p&gt;
+&lt;p&gt;Install pip:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install python3-pip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Install glances with pip for this user:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install --user &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;glances[web]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Re source your &lt;code&gt;.profile&lt;/code&gt; for the new executable for &lt;code&gt;glances&lt;/code&gt; to be in your current environment:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;source ~/.profile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Update the crontab to run glances at startup without web UI but able to share system metrics (no web UI to make it more efficient):&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
