@@ -32,6 +32,7 @@ venv
 # Build files
 build
 site
+public
 
 # Distribution files
 dist
