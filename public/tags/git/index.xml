@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Git on djismgaming&#39;s tech home</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on djismgaming&#39;s tech home</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Microsoft Edit in Debian or Ubuntu based distros</title>
+      <link>http://localhost:1313/blog/installing-microsoft-edit-debian-ubuntu/</link>
+      <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/installing-microsoft-edit-debian-ubuntu/</guid>
+      <description>&lt;p&gt;This little application makes it easier to edit files on the terminal with full mouse, copy-paste support and more! A good one to have in our toolkit.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The current version of Edit (1.2.0) is not available via the package manager &lt;code&gt;apt&lt;/code&gt; yet. This could change at some point in the future, making for an easier deployment.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;install-pre-requisites&#34;&gt;Install Pre-requisites&lt;/h2&gt;
+&lt;p&gt;zstd - to decompress the downloaded file&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install zstd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-the-latest-edit-version-from-github-for-x86_64&#34;&gt;Install the latest Edit version from GitHub for x86_64&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;EDIT_VERSION&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;curl -s &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://api.github.com/repos/microsoft/edit/releases/latest&amp;#34;&lt;/span&gt; | grep -Po &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#34;tag_name&amp;#34;: &amp;#34;v\K[0-9.]+&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;wget -qO edit.tar.zst https://github.com/microsoft/edit/releases/latest/download/edit-$EDIT_VERSION-x86_64-linux-gnu.tar.zst
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo tar xf edit.tar.zst -C /usr/local/bin edit
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;edit --version
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rm -rf edit.tar.zst
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This can easily be made into a script for multiple installations.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
