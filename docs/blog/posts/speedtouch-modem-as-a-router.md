@@ -1,23 +1,16 @@
 ---
 title: speedtouch modem as a router
-draft: false
-date: 2023-10-13
+date: '2023-10-13'
 tags:
-  - linux
-  - networking
-  - hardware
-  - hardware
-  - hacking
-  - routers
-authors:
-  - djismgaming
-categories:
-  - Linux
+- linux
+- networking
+- hardware
+- hardware
+- hacking
+- routers
 ---
 
-
 A speedtouch modem, like a 2007 model Thompson Speedtouch 585V6, is a DSL modem. But with a little tweak, it can be used as a router for your network.
-<!-- more -->
 Run these commands towards the SpeedTouch modem using `telnet`:
 
 ```bash

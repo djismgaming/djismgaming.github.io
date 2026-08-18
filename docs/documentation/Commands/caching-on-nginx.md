@@ -2,7 +2,6 @@
 description: For linuxserver/nginx
 ---
 
-
 # Caching on nginx
 
 

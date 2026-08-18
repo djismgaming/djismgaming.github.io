@@ -1,11 +1,11 @@
 ---
 tags:
-  - vm
-  - turnkey
-  - lvm
-  - proxmox
-draft: false
+- vm
+- turnkey
+- lvm
+- proxmox
 ---
+
 # Add storage to a Turnkey VM like Nextcloud
 
 Managing LVM on Proxmox

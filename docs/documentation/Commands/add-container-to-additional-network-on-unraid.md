@@ -1,7 +1,7 @@
 ---
 tags:
-  - containers
-  - unraid
+- containers
+- unraid
 ---
 
 # add container to additional network on unRAID
