@@ -10,7 +10,7 @@ tags:
 
     UPDATE 2023.10.13 - This post is here just for history's sake as Origin is basically deprecated at this point in time. It's always nice to keep history though. :wink:
         
-    UPDATE 2021.08.20 – This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.
+    UPDATE 2021.08.20 - This is a non-issue for me anymore although now I personally use EA Desktop with the Xbox Game Pass for PC. I have Origin installed but have not used it directly anymore since.
 
 ORIGINAL POST BELOW:
 
@@ -40,7 +40,7 @@ EnvironmentName=production
 CdnOverride=akamai
 ```
 
-- Save the file as EACore.ini.
+- Save the file as `EACore.ini`.
 - Now start Origin.
 
 Upon start you will be asked if you want to import the file you just created on your desktop.
@@ -56,6 +56,6 @@ This made a huge change for me. The Origin client started with a display of “R
 
 As a note, I also use Google Public DNS in my gaming computer. That is DNS servers:
 
-8.8.8.8 and 8.8.4.4
+`8.8.8.8` and `8.8.4.4`
 
 The patch just took a couple of minutes to download this time. Hope this helps someone out there.
