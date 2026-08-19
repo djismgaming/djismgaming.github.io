@@ -19,5 +19,5 @@ All my blog posts, newest first.
 - **2024-02-08** - [Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox](posts/proxmox-unprivileged-lxc-smb-igpu.md)
 - **2024-01-10** - [Proxmox | automatically restore SMB/CIFS share connections](posts/proxmox-restore-smb-cifs-share-connections.md)
 - **2023-10-18** - [Set up your SSH key-based authentication from Windows in a single line](posts/windows-ssh-copy-id.md)
-- **2023-10-13** - [SSH Tunneling for easy access to web-based apps form servers](posts/ssh-tunneling-web-apps.md)
+- **2023-10-13** - [SSH Tunneling for easy access to web-based apps for servers](posts/ssh-tunneling-web-apps.md)
 - **2023-10-13** - [speedtouch modem as a router](posts/speedtouch-modem-as-a-router.md)

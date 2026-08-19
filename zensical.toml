@@ -30,7 +30,7 @@ nav = [
     ] },
     { "2023" = [
       { "Set up your SSH key-based authentication from Windows in a single line" = "blog/posts/windows-ssh-copy-id.md" },
-      { "SSH Tunneling for easy access to web-based apps form servers" = "blog/posts/ssh-tunneling-web-apps.md" },
+      { "SSH Tunneling for easy access to web-based apps for servers" = "blog/posts/ssh-tunneling-web-apps.md" },
       { "speedtouch modem as a router" = "blog/posts/speedtouch-modem-as-a-router.md" },
     ] },
   ] },
