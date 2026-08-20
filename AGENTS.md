@@ -1,5 +1,9 @@
 # AGENTS.md
 
+## GitHub CLI
+
+The `gh` CLI is available and authenticated. Use it for repo operations (issues, PRs, actions, etc.) instead of web UI or API calls.
+
 ## Post types
 - Blog posts
 - Draft posts
