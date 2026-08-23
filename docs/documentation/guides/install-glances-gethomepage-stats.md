@@ -10,7 +10,7 @@ title: Install glances and keep it running for showing gethomepage.dev system st
 
 # Install glances and keep it running for showing gethomepage.dev system stats
 
-This will make the `glances` application run in the background on every reboot and provide the neccesary metrics for homepage.
+This guide makes the `glances` application run in the background on every reboot and provide the necessary metrics for homepage.
 
 Install pip:
 
@@ -24,7 +24,7 @@ Install glances with pip for this user:
 pip install --user 'glances[web]'
 ```
 
-Re source your `.profile` for the new executable for `glances` to be in your current environment:
+Re-source the `.profile` so the `glances` executable is available in the current environment:
 
 ```bash
 source ~/.profile
@@ -33,16 +33,16 @@ source ~/.profile
 Update the crontab to run glances at startup without web UI but able to share system metrics (no web UI to make it more efficient):
 
 ``` bash
-# this goes on crontab
+# this goes in crontab
 @reboot /home/ismael/.local/bin/glances -w --disable-webui
 ```
 
-Reboot the server and glances should be running after this automatically on every reboot. Works great in an LXC container.
+After a reboot, glances runs automatically on every boot. Works well in an LXC container.
 
 Create the `services.yaml` entry for gethomepage.dev to show server root usage stats:
 
 ???+ note
-	There are a bunch of strings on this YAML that are customized to your liking. See https://gethomepage.dev/widgets/services/glances/ for the specifics on the Glances widget.
+	Several strings in this YAML need customization. See https://gethomepage.dev/widgets/services/glances/ for the specifics on the Glances widget.
 
 ```yaml
 ...
@@ -57,6 +57,6 @@ Create the `services.yaml` entry for gethomepage.dev to show server root usage s
 ...
 ```
 
-At the end it should look something like this:
+The result should look like this:
 
 ![mini-docker glances widget](images/mini-docker-glances-widget.png)

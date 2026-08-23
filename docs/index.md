@@ -15,5 +15,5 @@ Take a look around and you could find something interesting!
 
 ## Site sections
 
-- [Blog](blog/index.md) - posts on tools, services and homelab adventures
-- [Documentation](documentation/index.md) - command and docker notes for quick reference
+- [Documentation](documentation/index.md) - commands, Docker notes, and step-by-step guides for quick reference
+- [Archive](archive/index.md) - old entries kept for historical purposes

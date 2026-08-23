@@ -5,6 +5,8 @@ tags:
 - ntfy
 ---
 
+Send notifications from an unRAID server to [ntfy](https://ntfy.sh/) using `curl`. The example below notifies the result of a Docker image prune:
+
 ``` bash
 #!/bin/bash
 OUTPUT=$(docker image prune -af | tail -1)

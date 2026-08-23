@@ -9,13 +9,14 @@ tags:
 
 ## The issue
 
-Upon connecting the GOG Galaxy client to Ubisoft Connect, it goes into a disconnected state again. This happens just seconds after signing in to the Ubisoft Connect account using the plugin's login. 
+Upon connecting the GOG Galaxy client to Ubisoft Connect, it goes into a disconnected state again. This happens just seconds after signing in to the Ubisoft Connect account using the plugin's login.
+
 ## How to fix the issue
 
 ???+ note
 	This seems to be an open issue in the GitHub repo referenced below. A definitive solution has not been found as this method needs to be re-applied from time to time.
 
-We can use a solution shared on a Reddit post:
+A solution shared on a Reddit post applies here:
 
 > [Not able to connect my ubisoft connect with GoG galaxy](https://www.reddit.com/r/gog/comments/pjsdph/comment/htsh140/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)  
 > by[u/ved7108](https://www.reddit.com/user/ved7108/) in[gog](https://www.reddit.com/r/gog/)
@@ -48,8 +49,9 @@ CLUB_APPID = "f35adcb5-1911-440c-b1c9-48fdc1701c68"
 CLUB_GENOME_ID = "5b36b900-65d8-47f3-93c8-86bdaa48ab50"
 ```
 
-- Save the file and login into the Ubisoft Connect login screen
-- It should now stay connected as shown below
+- Save the file and log in on the Ubisoft Connect login screen
+- The client should now stay connected, as shown below
+
 !!! info inline end "Remember"
 	Remember that this fix, so far, needs to be re-applied if Ubisoft changes the values on their side
 
