@@ -7,12 +7,15 @@ A static site built with [Zensical](https://zensical.org), the static site gener
 ## Project structure
 
 ```
-zensical.toml          # site configuration
+zensical.toml                    # site configuration
 docs/
-  index.md             # home page
-  blog/index.md        # blog listing (posts in blog/posts/)
-  documentation/       # command and docker notes
-  assets/              # shared assets
+  index.md                       # home page
+  documentation/
+    index.md                     # documentation landing
+    guides/index.md              # guides listing (entries in guides/)
+    Commands/, docker/, ...      # command and docker notes
+  archive/index.md               # archive of old entries (files in archive/)
+  assets/                        # shared assets
 ```
 
 ## Local development

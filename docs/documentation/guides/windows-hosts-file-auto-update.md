@@ -6,8 +6,11 @@ tags:
 ---
 
 ## Why do this
-There are a multitude of reasons to do this or use an application like the one shared here. Maybe there is an application that phones home and you need to test how it behaves when it looses connection with an URL. Or there is a need to set this up to keep a system from accessing unsecure sites/services online.
+
+There are many reasons to do this, or to use an application like the one shared here. For example, an application that phones home may need testing for its behavior when it loses connection with an URL, or a system needs to be kept from accessing unsecure sites/services online.
+
 ## Where to get hostctl from
+
 hostctl's GitHub page: https://github.com/guumaster/hostctl
 
 ## How to use hostctl

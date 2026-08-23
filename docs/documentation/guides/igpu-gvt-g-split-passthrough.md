@@ -11,7 +11,7 @@ date: '2025-03-16'
 
 # iGPU GVT-g Split Passthrough (Intel Integrated Graphics)
 
-Original post: https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-split-passthrough/
+Original guide: https://3os.org/infrastructure/proxmox/gpu-passthrough/igpu-split-passthrough/
 
 ## Introduction
 

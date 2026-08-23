@@ -12,30 +12,22 @@ edit_uri = "edit/main/docs/"
 
 nav = [
   { "Home" = "index.md" },
-  { Blog = [
-    { "Blog" = "blog/index.md" },
-    { "2025" = [
-      { "Installing Microsoft Edit in Debian or Ubuntu based distros" = "blog/posts/installing-microsoft-edit-debian-ubuntu.md" },
-      { "Install glances and keep it running for showing gethomepage.dev system stats" = "blog/posts/install-glances-gethomepage-stats.md" },
-      { "iGPU GVT-g Split Passthrough" = "blog/posts/igpu-gvt-g-split-passthrough.md" },
-      { "Auto-update the Windows hosts file with a hosted list" = "blog/posts/windows-hosts-file-auto-update.md" },
-    ] },
-    { "2024" = [
-      { "Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection" = "blog/posts/gog-galaxy-ubisoft-connect-plugin.md" },
-      { "Run a powershell ps1 script hidden from view and scheduled on Task Scheduler for Windows" = "blog/posts/powershell-hidden-script-task-scheduler.md" },
-      { "ntfy notifications from unRAID using curl" = "blog/posts/ntfy-notifications-from-unraid.md" },
-      { "Fix your SLOW Origin Games download speeds - UPDATED" = "blog/posts/fix-origin-game-downloads-speed.md" },
-      { "Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox" = "blog/posts/proxmox-unprivileged-lxc-smb-igpu.md" },
-      { "Proxmox | automatically restore SMB/CIFS share connections" = "blog/posts/proxmox-restore-smb-cifs-share-connections.md" },
-    ] },
-    { "2023" = [
-      { "Set up your SSH key-based authentication from Windows in a single line" = "blog/posts/windows-ssh-copy-id.md" },
-      { "SSH Tunneling for easy access to web-based apps for servers" = "blog/posts/ssh-tunneling-web-apps.md" },
-      { "speedtouch modem as a router" = "blog/posts/speedtouch-modem-as-a-router.md" },
-    ] },
-  ] },
   { Documentation = [
     { "Documentation" = "documentation/index.md" },
+    { Guides = [
+      { "Guides" = "documentation/guides/index.md" },
+      { "Installing Microsoft Edit in Debian or Ubuntu based distros" = "documentation/guides/installing-microsoft-edit-debian-ubuntu.md" },
+      { "Install glances and keep it running for showing gethomepage.dev system stats" = "documentation/guides/install-glances-gethomepage-stats.md" },
+      { "iGPU GVT-g Split Passthrough" = "documentation/guides/igpu-gvt-g-split-passthrough.md" },
+      { "Auto-update the Windows hosts file with a hosted list" = "documentation/guides/windows-hosts-file-auto-update.md" },
+      { "Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection" = "documentation/guides/gog-galaxy-ubisoft-connect-plugin.md" },
+      { "Run a PowerShell ps1 script hidden from view and scheduled on Task Scheduler for Windows" = "documentation/guides/powershell-hidden-script-task-scheduler.md" },
+      { "ntfy notifications from unRAID using curl" = "documentation/guides/ntfy-notifications-from-unraid.md" },
+      { "Mount an SMB share and use iGPU on an unprivileged Debian 12 LXC container in Proxmox" = "documentation/guides/proxmox-unprivileged-lxc-smb-igpu.md" },
+      { "Proxmox | automatically restore SMB/CIFS share connections" = "documentation/guides/proxmox-restore-smb-cifs-share-connections.md" },
+      { "Set up your SSH key-based authentication from Windows in a single line" = "documentation/guides/windows-ssh-copy-id.md" },
+      { "SSH tunneling for access to web-based apps on servers" = "documentation/guides/ssh-tunneling-web-apps.md" },
+    ] },
     { Commands = [
       { "add container to additional network on unRAID" = "documentation/Commands/add-container-to-additional-network-on-unraid.md" },
       { "add directory to PATH environment variable" = "documentation/Commands/add-directory-to-path-environment-variable.md" },
@@ -63,6 +55,11 @@ nav = [
       { "docker container startup with ntfy notifications" = "documentation/docker/docker-start.md" },
     ] },
     { "SAP Scripts" = "documentation/SAP-Scripts/new-table-entries.md" },
+  ] },
+  { Archive = [
+    { "Archive" = "archive/index.md" },
+    { "Fix your SLOW Origin Games download speeds - UPDATED (deprecated)" = "archive/fix-origin-game-downloads-speed.md" },
+    { "SpeedTouch modem as a router (2007 hardware)" = "archive/speedtouch-modem-as-a-router.md" },
   ] },
 ]
 
