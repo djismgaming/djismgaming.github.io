@@ -28,9 +28,6 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/djismgaming/djismgaming.github.io/blob/main/src/content/docs/",
       },
-      components: {
-        ThemeSelect: "./src/components/ThemeSelect.astro",
-      },
       sidebar: [
         {
           label: "Blog",
