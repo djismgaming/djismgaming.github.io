@@ -1,0 +1,39 @@
+---
+import Default from '@astrojs/starlight/components/ThemeSelect.astro'
+import StarlightBlogThemeSelect from 'starlight-blog/components/ThemeSelect.astro'
+---
+
+<StarlightBlogThemeSelect />
+
+<div class="sl-blog-header-links">
+	<a class="sl-blog-header-link" href="/documentation/">Documentation</a>
+</div>
+
+<Default />
+
+<style>
+	.sl-blog-header-links {
+		border-inline-end: 1px solid var(--sl-color-gray-5);
+		display: none;
+		gap: 1rem;
+		min-inline-size: 0;
+		padding-inline-end: 1rem;
+	}
+
+	@media (min-width: 50rem) {
+		.sl-blog-header-links {
+			align-items: center;
+			display: flex;
+		}
+	}
+
+	.sl-blog-header-link {
+		color: var(--sl-color-text-accent);
+		font-weight: 600;
+		min-inline-size: 0;
+		overflow: hidden;
+		text-decoration: none;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+</style>
