@@ -5,4 +5,4 @@ description: SAP scripting recipes.
 
 # SAP Scripts
 
-- [new entries into a table using vbs on Excel spreadsheet to SM30 on SAP](new-table-entries.md)
+- [Create New Table Entries in SAP SM30 Using VBS in Excel](new-table-entries.md)

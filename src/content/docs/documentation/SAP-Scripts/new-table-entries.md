@@ -1,22 +1,24 @@
 ---
-title: "new entries into a table using vbs on Excel spreadsheet to SM30 on SAP"
+title: "Create New Table Entries in SAP SM30 Using VBS in Excel"
+description: Enter new rows into a custom SAP table via the SM30 transaction using a VBS script in Excel.
 ---
 
-# new entries into a table using vbs on Excel spreadsheet to SM30 on SAP
+# Create New Table Entries in SAP SM30 Using VBS in Excel
 
-Working on SAP Security, I've come up to some instances in which a script would help a lot! :wink:
+While working on SAP Security, I've come across a few situations where a script really helps. :wink:
 
-This is one of those instances.
+This is one of them.
 
 !!! note
-    Enter this in a module on the Excel workbook you're working with.
+    Paste this into a VBA module in the Excel workbook you're working with.
 
-    Also, be sure to trace once with the SAPGUI script recorder to get
-    the values for `<saptable>` and `<saptablefield>`.
+    First, run the transaction once and record it with the SAP GUI Script
+    Recorder to capture the real values for `<saptable>` and
+    `<saptablefield>`.
 
-    Timer code can be removed/commented before execution.
+    The timer code can be removed or commented out before you run the script.
 
-``` bash
+```vba
 Sub sm30newentriesTABLE()
 
 '
@@ -53,13 +55,13 @@ session.findById("wnd[0]/tbar[1]/btn[5]").press
 'get data from current active sheet in the opened workbook
 For i = 2 To Cells.Find("*", Range("A1"), xlFormulas, , xlByRows, xlPrevious).Row
 'set variables values for each row
-roleS = Cells(i, 1).Value
+role = Cells(i, 1).Value
 roleDescription = Cells(i, 2).Value
 pSecondary = Cells(i, 10).Value
 pPrimary = Cells(i, 11).Value
 
 'do new entries
-session.findById("wnd[0]/<saptable>/<saptablefield>").Text = roleS
+session.findById("wnd[0]/<saptable>/<saptablefield>").Text = role
 session.findById("wnd[0]/<saptable>/<saptablefield>").Text = roleDescription
 session.findById("wnd[0]/<saptable>/<saptablefield>").Key = "Y"
 session.findById("wnd[0]/<saptable>/<saptablefield>").Key = "Y"
