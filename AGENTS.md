@@ -1,3 +1,7 @@
+## TODO
+
+The files inside ./todo are our todo tasks.
+
 ## Development
 
 When starting the dev server, use background mode:
