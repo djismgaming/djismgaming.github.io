@@ -1,0 +1,53 @@
+# -- Theme Parameters --
+# Reference: https://blowfish.page/docs/configuration/
+
+colorScheme = "blowfish"
+defaultAppearance = "dark"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+disableTextInHeader = true
+
+[homepage]
+  layout = "landing"
+  showRecent = true
+  showRecentItems = 12
+  showMoreLink = true
+  showMoreLinkDest = "/blog/"
+  cardView = true
+  cardViewScreenWidth = true
+  showSummary = true
+
+[article]
+  showDate = true
+  showDateUpdated = false
+  showAuthor = false
+  showHero = false
+  showBreadcrumbs = true
+  showTableOfContents = true
+  showReadingTime = true
+  showWordCount = false
+  showTaxonomies = true
+  showTags = true
+  showPagination = true
+  showEdit = true
+  editURL = "https://github.com/djismgaming/djismgaming.github.io/edit/main/content/"
+  editAppendPath = true
+
+[list]
+  cardView = true
+  cardViewScreenWidth = true
+  showSummary = true
+  showBreadcrumbs = true
+  groupByYear = false
+  showReadingTime = false
+
+[taxonomy]
+  showTermCount = true
+  cardView = true
+
+[term]
+  cardView = true
+  groupByYear = false
+  showTableOfContents = false

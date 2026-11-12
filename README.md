@@ -1,42 +1,53 @@
 # djismgaming.github.io
 
-Web home for tech things - [djismgaming.github.io](https://djismgaming.github.io)
+Personal tech blog — Hugo + [Blowfish](https://blowfish.page).
 
-A static site built with [Astro](https://astro.build) and [Starlight](https://starlight.astro.build), with a blog powered by `starlight-blog` and search via Pagefind.
+- Source content: [`content/`](content)
+- Blog posts: [`content/blog/`](content/blog)
+- Theme: `themes/blowfish` (git submodule of <https://github.com/nunocoracao/blowfish>)
+- Deployed at <https://djismgaming.github.io>
 
-## Project structure
+## Requirements
 
-```
-src/content/docs/
-  index.mdx                       # home page (splash)
-  blog/                          # dated guides / blog posts (+ images/)
-  documentation/
-    index.mdx                    # documentation main menu
-    Commands/, docker/, SAP-Scripts/   # command and docker notes
-    guides/index.md              # guides listing (entries live in /blog/)
-    archive/                     # older entries kept for history
-public/                          # static assets, favicons, _redirects
-```
+Hugo **0.169.0 extended** (Blowfish requires 0.166.0–0.169.0).
+Install it with your package manager, `brew`, or `pip install hugo`.
 
-## Local development
+## Development
 
 ```bash
-npm install
-npm run dev
+# first checkout only: pull the theme submodule
+git submodule update --init --recursive
+
+hugo server          # live preview at http://localhost:1313/
+hugo server --buildDrafts
 ```
 
-Then visit http://localhost:4321.
+Content dates come from git history (`date: gitLastModified` on ported posts), so `hugo server` and CI builds need the repo committed; set `date:` explicitly on new posts when you want a fixed publish date.
 
-Note: search (Pagefind) is only bundled into production builds — use `npm run build` and `npm run preview` to test it.
-
-## Build
+## Build / Deploy
 
 ```bash
-npm run build
+hugo --minify --enableGitInfo
 ```
 
-Output is written to `dist/`.
+The `.github/workflows/hugo.yml` workflow builds the site on every push to `main` and publishes the `public/` directory to GitHub Pages.
 
-## Deploy
+To track upstream theme releases:
 
-Pushes to `main` deploy the site to GitHub Pages via the GitHub Actions workflow in `.github/workflows/docs.yml`. Make sure the Pages source is set to **GitHub Actions** in the repository settings.
+```bash
+git submodule update --remote themes/blowfish
+```
+
+## Structure
+
+```
+.
+├── config/
+│   └── _default/           # hugo.toml, params.toml, languages.en.toml, menus.en.toml, markup.toml
+├── content/
+│   ├── _index.md           # homepage (Blowfish landing layout)
+│   └── blog/               # all posts, flat; images live in each page bundle
+├── themes/
+│   └── blowfish/           # theme git submodule
+├── static/                 # favicons and other site assets
+└── .github/workflows/hugo.yml

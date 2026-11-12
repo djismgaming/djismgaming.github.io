@@ -1,0 +1,57 @@
+# Hugo + Blowfish on GitHub Pages
+#
+# Pinned Hugo version: the Blowfish module declares support for 0.166.0-0.169.0,
+# so `latest` would walk the pair out of range when Hugo ships 0.170.
+# The `extended` build is required (Blowfish uses Hugo extended features).
+name: Hugo (GitHub Pages)
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    # build pull requests against main so CI failures show up before merge
+    branches:
+      - main
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-${{ github.event_name }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Hugo CLI (extended, pinned)
+        run: |
+          wget -O "$RUNNER_TEMP/hugo.deb" \
+            https://github.com/gohugoio/hugo/releases/download/v0.169.0/hugo_extended_0.169.0_linux-amd64.deb
+          sudo dpkg -i "$RUNNER_TEMP/hugo.deb"
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive # themes/blowfish is a git submodule
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build the site
+        # --enableGitInfo backs the ':git' fallback in frontmatter.date
+        run: hugo --minify --enableGitInfo --baseURL "https://djismgaming.github.io"
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+  # Publishing only happens from main; PR runs stop after the build/upload job.
+  deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged)
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

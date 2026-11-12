@@ -4,23 +4,33 @@ The files inside ./todo are our todo tasks.
 
 ## Development
 
-When starting the dev server, use background mode:
+This site is Hugo 0.169 (extended) + the Blowfish theme, vendored as the git
+submodule `themes/blowfish`.
+
+Serve the site in the background with:
 
 ```
-astro dev --background
+hugo server --port 4321 &
 ```
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+Manage it with `kill %1` (or `pkill -f "hugo server"`) to stop, and read the
+build log from the terminal that started it. To rebuild once instead of serving:
+
+```
+hugo --minify --enableGitInfo
+```
+
+The theme submodule must be checked out before serving (`git submodule update --init --recursive`).
 
 ## Documentation
 
-Full documentation: https://docs.astro.build
+Full Hugo documentation: https://docs.hugo.io
+Blowfish documentation: https://blowfish.page/docs/
 
 Consult these guides before working on related tasks:
 
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+- [Content organization and page bundles](https://docs.hugo.io/content-management/organization/)
+- [Managing content](https://docs.hugo.io/content-management/)
+- [Front matter](https://docs.hugo.io/content-management/front-matter/)
+- [Shortcodes](https://docs.hugo.io/content-management/shortcodes/)
+- [Multi-language support](https://docs.hugo.io/content-management/i18n/)
