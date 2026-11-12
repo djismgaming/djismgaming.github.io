@@ -8,13 +8,17 @@ on:
   push:
     branches:
       - main
+  pull_request:
+    # build pull requests against main so CI failures show up before merge
+    branches:
+      - main
   workflow_dispatch:
 permissions:
   contents: read
   pages: write
   id-token: write
 concurrency:
-  group: pages
+  group: pages-${{ github.event_name }}
   cancel-in-progress: false
 jobs:
   build:
@@ -39,7 +43,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+  # Publishing only happens from main; PR runs stop after the build/upload job.
   deploy:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged)
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

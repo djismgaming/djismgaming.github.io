@@ -1,5 +1,6 @@
 ---
 title: Add storage to a Turnkey VM like Nextcloud
+date: 2025-04-30
 description: Managing LVM on Proxmox
 tags:
 - vm

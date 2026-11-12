@@ -1,5 +1,6 @@
 ---
 title: Clear Nextcloud Turnkey VM logs
+date: 2026-08-18
 tags:
 - vm
 - turnkey

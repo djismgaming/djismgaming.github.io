@@ -1,5 +1,6 @@
 ---
 title: Extend the root volume in TurnKey Linux Nextcloud appliance VM
+date: 2026-08-18
 description: 'After adding an additional drive to the VM in Proxmox:'
 tags:
 - containers

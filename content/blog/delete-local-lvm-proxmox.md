@@ -1,5 +1,6 @@
 ---
 title: Delete the local-lvm directory from proxmox and resize the local to get the complete disk space
+date: 2023-12-01
 description: '!!! note'
 tags:
 - commands

@@ -1,5 +1,6 @@
 ---
 title: docker container backup with ntfy notifications
+date: 2023-11-07
 description: Used in selfhosted server and also a VPS
 tags:
 - docker

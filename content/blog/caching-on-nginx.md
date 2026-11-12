@@ -1,5 +1,6 @@
 ---
 title: Caching on nginx
+date: 2023-10-12
 description: For linuxserver/nginx
 tags:
 - commands

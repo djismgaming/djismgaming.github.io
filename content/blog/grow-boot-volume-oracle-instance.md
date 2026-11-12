@@ -1,5 +1,6 @@
 ---
 title: Grow the boot volume of an oracle VM Ubuntu instance
+date: 2024-01-10
 description: Backup current partition table
 tags:
 - commands

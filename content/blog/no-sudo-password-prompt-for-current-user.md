@@ -1,5 +1,6 @@
 ---
 title: no sudo password prompt for current user
+date: 2023-10-12
 description: This will make it possible for the current user (the user executing the command will be added to it via the environment variable $USER in the command) to execute all sudo commands…
 tags:
 - commands

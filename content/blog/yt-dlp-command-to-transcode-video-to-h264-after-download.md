@@ -1,5 +1,6 @@
 ---
 title: yt-dlp command to transcode video to h264 after download
+date: 2026-08-18
 description: 'Here''s a breakdown:'
 tags:
 - commands

@@ -1,5 +1,6 @@
 ---
 title: Create New Table Entries in SAP SM30 Using VBS in Excel
+date: 2023-11-15
 description: Enter new rows into a custom SAP table via the SM30 transaction using a VBS script in Excel.
 tags:
 - sap-scripts

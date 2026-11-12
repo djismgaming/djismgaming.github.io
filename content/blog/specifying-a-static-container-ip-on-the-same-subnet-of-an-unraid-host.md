@@ -1,5 +1,6 @@
 ---
 title: specifying a static container IP on the same subnet of an UNRAID host
+date: 2023-10-12
 description: 'networks: dockernat: external: true name: br0'
 tags:
 - commands

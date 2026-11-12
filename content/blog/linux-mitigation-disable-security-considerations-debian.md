@@ -1,5 +1,6 @@
 ---
 title: linux mitigation disable (debian)
+date: 2023-10-12
 description: Add mitigations=off to the GRUB kernel command line on a Debian system, which disables all optional CPU vulnerability mitigations. Needs root and a reboot.
 tags:
 - commands

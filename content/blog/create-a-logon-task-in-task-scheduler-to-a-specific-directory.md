@@ -1,5 +1,6 @@
 ---
 title: Create a logon task in task scheduler to a specific directory
+date: 2026-08-18
 tags:
 - commands
 ---

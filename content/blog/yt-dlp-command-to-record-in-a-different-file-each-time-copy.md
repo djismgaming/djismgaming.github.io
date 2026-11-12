@@ -1,5 +1,6 @@
 ---
 title: yt-dlp command to record in a different file each time
+date: 2026-08-18
 tags:
 - commands
 ---

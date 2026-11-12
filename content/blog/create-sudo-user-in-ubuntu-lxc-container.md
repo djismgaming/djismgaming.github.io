@@ -1,5 +1,6 @@
 ---
 title: create sudo user with access to docker in ubuntu lxc container
+date: 2023-10-12
 description: or alternatively
 tags:
 - commands

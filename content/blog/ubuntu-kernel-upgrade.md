@@ -1,5 +1,6 @@
 ---
 title: ubuntu kernel upgrade
+date: 2023-10-12
 description: Bash script for Ubuntu (and derivatives as LinuxMint) to easily (un)install kernels from the Ubuntu Kernel PPA (http://kernel.ubuntu.com/~kernel-ppa/mainline/)
 tags:
 - commands
