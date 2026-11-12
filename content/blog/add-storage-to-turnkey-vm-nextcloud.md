@@ -1,6 +1,5 @@
 ---
 title: Add storage to a Turnkey VM like Nextcloud
-date: gitLastModified
 description: Managing LVM on Proxmox
 tags:
 - vm

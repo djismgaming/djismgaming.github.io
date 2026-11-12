@@ -1,6 +1,5 @@
 ---
 title: pi-hole one line install
-date: gitLastModified
 tags:
 - commands
 ---

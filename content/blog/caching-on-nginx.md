@@ -1,6 +1,5 @@
 ---
 title: Caching on nginx
-date: gitLastModified
 description: For linuxserver/nginx
 tags:
 - commands

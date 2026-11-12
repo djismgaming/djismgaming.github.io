@@ -1,6 +1,5 @@
 ---
 title: specifying a static container IP on the same subnet of an UNRAID host
-date: gitLastModified
 description: 'networks: dockernat: external: true name: br0'
 tags:
 - commands

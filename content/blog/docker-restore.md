@@ -1,6 +1,5 @@
 ---
 title: docker container restore with ntfy notifications
-date: gitLastModified
 description: Used in selfhosted server and also a VPS
 tags:
 - docker

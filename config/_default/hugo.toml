@@ -11,6 +11,11 @@ enableEmoji = true
 enableGitInfo = true
 
 summaryLength = 35
+
+# Pages without an explicit date fall back to the git author date (--enableGitInfo)
+[frontmatter]
+  date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified', ':git']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
 buildDrafts = false
 buildFuture = false
 
@@ -32,6 +37,11 @@ goCopyForRender = false
 
 [imaging]
   anchor = 'Center'
+
+[imaging.jpeg]
+  quality = 85
+
+[imaging.webp]
   quality = 85
 
 [related]

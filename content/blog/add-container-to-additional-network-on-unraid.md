@@ -1,6 +1,5 @@
 ---
 title: add container to additional network on unRAID
-date: gitLastModified
 description: The custom docker network needs to be created first with docker network create <networkname> and unRAID docker options set to "Preserve user defined networks" as enabled.
 tags:
 - containers

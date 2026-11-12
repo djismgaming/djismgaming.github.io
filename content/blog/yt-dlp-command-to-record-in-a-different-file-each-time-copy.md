@@ -1,6 +1,5 @@
 ---
 title: yt-dlp command to record in a different file each time
-date: gitLastModified
 tags:
 - commands
 ---

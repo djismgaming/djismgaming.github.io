@@ -1,6 +1,5 @@
 ---
 title: create sudo user with access to docker in ubuntu lxc container
-date: gitLastModified
 description: or alternatively
 tags:
 - commands

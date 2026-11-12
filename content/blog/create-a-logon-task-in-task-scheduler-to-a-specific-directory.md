@@ -1,6 +1,5 @@
 ---
 title: Create a logon task in task scheduler to a specific directory
-date: gitLastModified
 tags:
 - commands
 ---

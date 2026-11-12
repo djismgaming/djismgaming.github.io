@@ -1,6 +1,5 @@
 ---
 title: Clear Nextcloud Turnkey VM logs
-date: gitLastModified
 tags:
 - vm
 - turnkey
