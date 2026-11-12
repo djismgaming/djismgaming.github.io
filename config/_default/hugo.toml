@@ -1,0 +1,51 @@
+# -- Site Configuration --
+# Blog site on Hugo + Blowfish (theme vendored as themes/blowfish git submodule)
+
+baseURL = "https://djismgaming.github.io/"
+title = "djismgaming's tech home"
+theme = "blowfish"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+
+summaryLength = 35
+buildDrafts = false
+buildFuture = false
+
+goCopyForRender = false
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[imaging]
+  anchor = 'Center'
+  quality = 85
+
+[related]
+  threshold = 0
+  toLower = false
+
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
+  [[related.indices]]
+    name = "title"
+    weight = 20
+
+  [[related.indices]]
+    name = "date"
+    weight = 10

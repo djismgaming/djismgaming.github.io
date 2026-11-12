@@ -1,0 +1,13 @@
+---
+title: stop gdm3 in ubuntu desktop install
+date: gitLastModified
+description: This will make it so the desktop installation can be a lot less resource hungry in a VM if it's mainly to be used as a server VM (unattended) until the desktop is desired/needed for management.
+tags:
+- commands
+---
+
+# stop gdm3 in ubuntu desktop install
+
+``` bash
+sudo service gdm3 stop
+```

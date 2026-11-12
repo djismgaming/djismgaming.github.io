@@ -1,0 +1,18 @@
+label = "English"
+locale = "en"
+weight = 1
+title = "djismgaming's tech home"
+
+[params]
+  description = "Web home for tech things!"
+  dateFormat = "2 January 2006"
+
+  [params.author]
+    name = "Ismael Lamberty"
+    headline = "Tech Lead / Creator"
+    bio = "Web home for tech things!"
+    links = [
+      { github = "https://github.com/djismgaming" },
+      { twitter = "https://twitter.com/djismgaming" },
+      { linkedin = "https://www.linkedin.com/in/ismaellm/" },
+    ]
