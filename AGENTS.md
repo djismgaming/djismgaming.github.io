@@ -1,6 +1,6 @@
 ## TODO
 
-The files inside ./todo are our todo tasks.
+The TODO.md file includes our next tasks.
 
 ## Development
 
