@@ -2,6 +2,10 @@
 public/
 .hugo_build.lock
 
+# downloaded Hugo release packages
+*.deb
+hugo_extended_*
+
 # Figma / design files
 design/
 
