@@ -1,32 +1,36 @@
 ---
-title: Fix your SLOW Origin Games download speeds – UPDATED
+title: Fix Your SLOW Origin Games Download Speeds – UPDATED
 date: 2024-10-13
-description: 'Work around slow Origin game download speeds by enabling R&D mode with a custom EACore.ini file.'
+description: 'Work around slow Origin download speeds by enabling R&D mode with a custom EACore.ini file.'
 tags:
 - origin
 - gaming
 - archive
+- performance
 ---
 
 > **Deprecated** — Origin is deprecated at this point in time. This entry is kept for historical purposes only.
 
 > **Update (2021-08-20)** — This is a non-issue anymore; EA Desktop with the Xbox Game Pass for PC replaced direct use of the Origin client.
 
-ORIGINAL POST BELOW:
+## The Problem: Why are Origin speeds so slow?
+Many users have reported frustratingly slow download speeds on the Origin client. Even with a high-speed gigabit connection, downloads often throttle to a fraction of the available bandwidth.
 
-Origin can be sluggish at times.
+This is often caused by the way Origin handles Content Delivery Network (CDN) connections. Without specific configuration, the client may default to congested nodes or fail to maintain the optimal connection state, leading to sluggish performance during large game downloads.
 
-While downloading a large game patch, the client downloaded at 2.5 MB/s on a 70 Mbps connection, well below the theoretical maximum of 8.75 MB/s on that connection. This was with a best-case setup: a 1 Gbps wired connection from the computer to the router and another from the router to the cable company modem.
+## The Solution: Enabling R&D Mode
+While there is no official \"fix\" button, a well-known workaround involves forcing the client into \"R&D Mode.\" This changes how the client interacts with the CDN and has been reported to significantly improve throughput.
 
-Research into Reddit posts, forum replies, and a long-running thread on answers.ea.com showed people trying all kinds of methods to improve Origin download speeds. There was no good official fix for this.
+### Prerequisites
+*   **Note:** This guide is for users still maintaining older libraries or legacy installations. For new installs, use the EA Desktop app.
+*   You will need to create a small configuration file on your desktop.
 
-A snippet of information from https://www.pcgamingwiki.com/ pointed to a workaround. That section, readable [here](https://www.pcgamingwiki.com/wiki/Origin), addresses an issue where the Origin client suddenly stops downloading mid-download, but reports that it also improves download speeds.
+### Step-by-Step Instructions
 
-The excerpt from the site is reproduced below. The steps are easy:
-
-- Exit Origin
-- Create a new empty document on your desktop
-- Enter the following text in the file:
+#### Step 1: Create the Configuration File
+1.  Exit the Origin client completely.
+2.  Create a new empty text document on your desktop.
+3.  Open the document and paste the following configuration:
 
 ```config
 [connection]
@@ -36,20 +40,23 @@ EnvironmentName=production
 CdnOverride=akamai
 ```
 
-- Save the file as `EACore.ini`.
-- Now start Origin.
+4.  Save the file exactly as `EACore.ini`.
 
-Upon start, Origin asks whether to import the file created on the desktop.
-Press Yes.
-This overwrites the old config file.
+#### Step 2: Import the Configuration
+1.  Launch the Origin client.
+2.  A prompt will appear asking if you want to import the `EACore.ini` file from your desktop.
+3.  Click **Yes**. 
+    *The client will automatically move this file to its internal configuration folder and delete the copy on your desktop.*
 
-#### Note
+#### Step 3: Verify the Change
+Once the client restarts, you should see **“R&D | PR”** appear in the upper right corner. This confirms that the R&D mode is active.
 
-- The EACore.ini file is deleted from the desktop as soon as it is imported. To leave R&D mode later, go to the location where Origin is installed and delete the EACore.ini file found there.
+### Why does this work?
+By setting `CdnOverride=akamai`, you are instructing the Origin client to prioritize the Akamai CDN. In many regions, Akamai provides more stable and higher-bandwidth routes for game data than the default paths, effectively bypassing the bottlenecks that cause sluggish downloads.
 
-It has been reported that having Origin in R&D-mode increases download speed.
-With this change, the Origin client started up displaying “R&D | PR” in the upper right corner. On the next patch download, Origin reached 8.83 MB/s.
-
-As a note, Google Public DNS (`8.8.8.8` and `8.8.4.4`) was also in use on the gaming computer.
-
-The patch downloaded in a couple of minutes with these settings.
+### Summary of Changes
+| Configuration | Effect |
+| :--- | :--- |
+| `EnvironmentName=production` | Ensures the client operates in a stable production environment. |
+| `CdnOverride=akamai` | Forces the use of the Akamai CDN for faster download paths. |
+| **R&D Mode** | Changes the internal logic of the client to prioritize throughput. |

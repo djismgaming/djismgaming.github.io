@@ -1,48 +1,62 @@
 ---
-title: Install glances and keep it running for showing gethomepage.dev system stats
+title: How to Run Glances as a Persistent Background Service for gethomepage.dev
 date: 2025-05-04
-description: This guide makes the glances application run in the background on every reboot and provide the necessary metrics for homepage.
+description: A guide to installing `glances`, configuring it to run automatically on boot as a background daemon, and integrating it with your gethomepage.dev dashboard.
 tags:
 - metrics
 - status
 - glances
 - cron
+- home-server
 ---
 
-This guide makes the `glances` application run in the background on every reboot and provide the necessary metrics for homepage.
+### Introduction
+If you are using [gethomepage.dev](https://gethomepage.dev) to monitor your home lab, you likely want a way to see real-time system vitals—like CPU usage, RAM consumption, and disk space—at a glance. 
 
-Install pip:
+`glances` is one of the most robust tools for this job. However, because it is primarily a CLI tool, it won't stay running after you close your terminal. To make it work with a dashboard, we need to turn it into a \"set and forget\" background service. This guide shows you how to do that efficiently, specifically optimized for low-resource environments like LXC containers.
 
+### Step 1: Installation
+We will use `pip` to install `glances`. Using `pip` over `apt` ensures you get the latest version, while the `--user` flag prevents permission conflicts with system-wide Python libraries.
+
+First, ensure you have the Python package manager installed:
 ```bash
+sudo apt update
 sudo apt install python3-pip
 ```
 
-Install glances with pip for this user:
-
+Next, install `glances` with web support:
 ```bash
 pip install --user 'glances[web]'
 ```
 
-Re-source the `.profile` so the `glances` executable is available in the current environment:
-
+**Note:** To ensure your current shell recognizes the new executable, refresh your profile:
 ```bash
 source ~/.profile
 ```
 
-Update the crontab to run glances at startup with the web UI disabled, so it still shares system metrics while using fewer resources:
+### Step 2: Making it Persistent (The \"Always-On\" Setup)
+To provide data to your dashboard, `glances` must start automatically every time your server reboots. While many use `systemd`, a `cron` job is often simpler and lighter for containerized environments.
 
-``` bash
-# this goes in crontab
-@reboot /home/ismael/.local/bin/glances -w --disable-webui
-```
+We will use a `@reboot` cron job. We also include the `--disable-webui` flag: this tells `glances` to keep the metrics engine running (which the dashboard needs) while skipping the heavy web interface, saving system resources.
 
-From then on, glances starts automatically at every boot. Works well in an LXC container.
+1. Open your crontab editor:
+   ```bash
+   crontab -e
+   ```
+2. Add the following line to the bottom of the file (replace `ismael` with your actual username):
+   ```bash
+   @reboot /home/ismael/.local/bin/glances -w --disable-webui
+   ```
 
-Create the `services.yaml` entry for gethomepage.dev to show server root usage stats:
+*Tip: You can verify the path to your glances executable by running `which glances`.*
 
-> **Note**
->
-> Several strings in this YAML need customization. See https://gethomepage.dev/widgets/services/glances/ for the specifics on the Glances widget.
+### Step 3: Integrating with gethomepage.dev
+Now that `glances` is running in the background on port **61208**, you can pull those stats into your dashboard.
+
+Edit your `services.yaml` to include the following entry. This example shows how to display the root filesystem usage:
+
+> **Configuration Note**
+> Some values in this YAML are specific to your environment. Refer to the [Glances Widget Documentation](https://gethomepage.dev/widgets/services/glances/) for customization options like specific metrics or version numbers.
 
 ```yaml
 ...
@@ -51,12 +65,13 @@ Create the `services.yaml` entry for gethomepage.dev to show server root usage s
         icon: docker.png
         widgets: 
             - type: glances
-              url: http://<IP of server>:61208
-              version: 4 # main version of glances used
-              metric: fs:/ # showing root usage
+              url: http://<IP_OF_SERVER>:61208
+              version: 4 # The version of glances currently installed
+              metric: fs:/ # Displays root filesystem usage
 ...
 ```
 
-The result should look like this:
+### The Result
+Once configured, your dashboard will now automatically poll your server's vitals, giving you a live, beautiful overview of your system's health without you having to manually start any services.
 
 ![mini-docker glances widget](mini-docker-glances-widget.png)
