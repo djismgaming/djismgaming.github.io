@@ -1,63 +1,73 @@
 ---
-title: Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection
+title: Fixing the GOG Galaxy 2.0 Ubisoft Connect Plugin Connection
 date: 2024-12-13
 description: 'Fix the GOG Galaxy 2.0 Ubisoft Connect plugin dropping back to a disconnected state seconds after you sign in to your Ubisoft Connect account.'
 tags:
 - gaming
 - development
 - python
+- connectivity
+- troubleshooting
 ---
 
-## The issue
+## The Issue: The \"Ghost\" Disconnection
+When you connect the GOG Galaxy client to Ubisoft Connect, it often drops back into a disconnected state just seconds after you sign in. This is incredibly frustrating, as it prevents you from syncing your library or launching games seamlessly.
 
-When you connect the GOG Galaxy client to Ubisoft Connect, it drops back into a disconnected state just seconds after you sign in to your Ubisoft Connect account through the plugin's login.
+This issue typically occurs because the plugin is attempting to authenticate using outdated or incorrect credentials in its internal configuration files, causing the connection to fail as soon as the handshake is completed.
 
-## How to fix the issue
+## The Solution: Manual Credential Sync
+Since this is currently an open issue in the official repository, we have to manually \"force\" the plugin to recognize your account by updating its internal constants.
 
-> **Note**
+> **Warning**
 >
-> This appears to be an open issue in the GitHub repo referenced below. No definitive solution has been found yet, so this method may need to be re-applied from time to time.
+> This method involves modifying a local configuration file. Because Ubisoft frequently updates their backend, this fix may need to be re-applied if they change their internal `appId` or `genomeId`.
 
-A solution shared on Reddit by [u/ved7108](https://www.reddit.com/user/ved7108/) applies here:
+### Step-by-Step Fix
 
-> [Not able to connect my ubisoft connect with GoG galaxy](https://www.reddit.com/r/gog/comments/pjsdph/comment/htsh140/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) (in [r/gog](https://www.reddit.com/r/gog/))
-
-The same fix is discussed in this GitHub issue:
-
-https://github.com/FriendsOfGalaxy/galaxy-integration-uplay/issues/33#issuecomment-1444362239
-
-The steps, for reference:
-
-- Click the "Connect" button in the Ubisoft Connect integration settings in GOG Galaxy
-- When the login screen appears, copy the `appId` (1) and `genomeId` (2) values from the pop-up URL
+#### Step 1: Capture the Session IDs
+1.  Click the **Connect** button in the Ubisoft Connect integration settings in GOG Galaxy.
+2.  When the Ubisoft login screen appears, look at the URL in your browser.
+3.  Identify and copy the following two values from the URL:
+    *   `appId` (Example: `f35adcb5-...`)
+    *   `genomeId` (Example: `5b36b900-...`)
 
 ![Ubisoft login screen](ubisoft-connect-login.png)
 /// caption
 Image showing the necessary values to copy from the login URL
-///
 
-- Modify the file `%localappdata%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a\consts.py`
-	- If you use VS Code, you can open it from a PowerShell shell with this command
+#### Step 2: Modify the Plugin Constants
+We need to update the `consts.py` file within the GOG Galaxy plugin folder.
 
-```powershell
-code %localappdata%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a\consts.py
-```
+1.  Navigate to the following path (Replace `uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a` with your specific plugin folder ID if it differs):
+    `%localappdata%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a\consts.py`
 
-- Find the lines shown below and replace the values with the ones you copied from the Ubisoft Connect login screen
+2.  **Pro Tip:** You can open this file directly from a PowerShell shell using VS Code with this command:
+    ```powershell
+    code %localappdata%\GOG.com\Galaxy\plugins\installed\uplay_afb5a69c-b2ee-4d58-b916-f4cd75d4999a\consts.py
+    ```
 
-```
-CLUB_APPID = "f35adcb5-1911-440c-b1c9-48fdc1701c68"
-CLUB_GENOME_ID = "5b36b900-65d8-47f3-93c8-86bdaa48ab50"
-```
+3.  Find these lines in the file:
+    ```python
+    CLUB_APPID = "f35adcb5-1911-440c-b1c9-48fdc1701c68"
+    CLUB_GENOME_ID = "5b36b900-65d8-47f3-93c8-86bdaa48ab50"
+    ```
+4.  Replace the values inside the quotes with the `appId` and `genomeId` you copied in Step 1.
 
-- Save the file, then log in from the Ubisoft Connect login screen
-- The client should now stay connected, as shown below
+5.  Save the file.
 
-> **Remember**
->
-> So far, this fix needs to be re-applied if Ubisoft changes the values on their side.
+#### Step 3: Finalize Connection
+Restart the GOG Galaxy client and attempt to log in again. The client should now remain connected successfully.
 
 ![GOG Galaxy Integration Settings](gog-galaxy-integrations-settings.png)
 /// caption
 Image showing a working connection to Ubisoft Connect after a successful file modification
-///
+
+### Why does this work?
+The GOG Galaxy plugin acts as a bridge. By manually updating the `consts.py` file, you are providing the plugin with the correct \"handshake\" keys required by Ubisoft's current API. This bypasses the plugin's inability to dynamically update these credentials during the login flow.
+
+## Summary of Changes
+| Change | Purpose |
+| :--- | :--- |
+| **URL Inspection** | Captures the live session keys from Ubisoft. |
+| **consts.py Modification** | Injects those keys directly into the plugin's core logic. |
+| **Result** | Bypasses the automatic disconnection loop. |
