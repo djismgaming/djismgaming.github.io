@@ -1,0 +1,27 @@
+/* Site-level overrides. Loaded after assets/css/compiled/main.css (see head.html),
+   so these declarations win. Selectors carry :is(.dark *) / :is(:not(.dark) *)
+   to match Tailwind's specificity, e.g. .dark\:bg-neutral-800:is(.dark *). */
+
+/* -- Ocean depth -- */
+/* background-attachment: fixed keeps the blobs anchored while the page scrolls. */
+
+body:is(.dark *) {
+  background-attachment: fixed;
+  background-color: #041E39;
+  background-image:
+    radial-gradient(circle at 10% 15%, rgba(157, 231, 240, 0.18), transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(59, 164, 197, 0.22), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(22, 83, 126, 0.35), transparent 50%);
+  --scrollbar-track: #041E39;
+  --scrollbar-thumb: #16537E;
+}
+
+/* Light appearance: same hues, inverted. Keeps bg-white/85 cards readable. */
+body:is(:not(.dark) *) {
+  background-attachment: fixed;
+  background-color: #F3F8FA;
+  background-image:
+    radial-gradient(circle at 10% 15%, rgba(4, 30, 57, 0.05), transparent 35%),
+    radial-gradient(circle at 85% 30%, rgba(22, 83, 126, 0.07), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(59, 164, 197, 0.12), transparent 50%);
+}
