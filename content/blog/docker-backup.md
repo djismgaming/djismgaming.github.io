@@ -1,14 +1,12 @@
 ---
 title: docker container backup with ntfy notifications
 date: 2023-11-07
-description: Used in selfhosted server and also a VPS
+description: A script that backs up Docker container configuration files and data, with ntfy notifications, for a self-hosted server or a VPS.
 tags:
 - docker
 ---
 
-# docker container backup with ntfy notifications
-
-Used in selfhosted server and also a VPS
+Used on a self-hosted server and on a VPS.
 
 > **Can be used in a set**
 >
@@ -29,7 +27,7 @@ backupDate=$(date  +'%F')
 # this just prints the formated date variable to the console if you want to see it.
 echo "Backup date $backupDate"
 
-# move to the path where you will keep all of yoru docker configurations and data
+# move to the path where you will keep all of your docker configurations and data
 cd /home/ubuntu/docker
 
 cd gateway

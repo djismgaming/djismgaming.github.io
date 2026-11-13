@@ -1,14 +1,10 @@
 ---
 title: specifying a static container IP on the same subnet of an UNRAID host
 date: 2023-10-12
-description: 'networks: dockernat: external: true name: br0'
+description: 'Attach a Docker container to the br0 network on an unRAID host so it gets a static IP on the same subnet.'
 tags:
 - commands
 ---
-
-# specifying a static container IP on the same subnet of an UNRAID host
-
-
 
 ``` yaml
 // version: '3.3'

@@ -1,7 +1,7 @@
 ---
 title: Fixing the GOG Galaxy 2.0 Ubisoft Connect plugin connection
 date: 2024-12-13
-description: When you connect the GOG Galaxy client to Ubisoft Connect, it drops back into a disconnected state just seconds after you sign in to your Ubisoft Connect account through the…
+description: 'Fix the GOG Galaxy 2.0 Ubisoft Connect plugin dropping back to a disconnected state seconds after you sign in to your Ubisoft Connect account.'
 tags:
 - gaming
 - development
@@ -55,7 +55,7 @@ CLUB_GENOME_ID = "5b36b900-65d8-47f3-93c8-86bdaa48ab50"
 
 > **Remember**
 >
-> So far, this fix needs to be re-applied if Ubisoft changes the values on their side
+> So far, this fix needs to be re-applied if Ubisoft changes the values on their side.
 
 ![GOG Galaxy Integration Settings](gog-galaxy-integrations-settings.png)
 /// caption

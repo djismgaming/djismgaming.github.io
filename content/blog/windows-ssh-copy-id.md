@@ -30,17 +30,17 @@ That directory will include:
 - your generated private key `id_rsa`
 - your generated public key `id_rsa.pub`
 
-The public key is the one we'll copy into any remote host we want to connect without using a password.
+The public key is the one we'll copy into any remote host we want to connect to without using a password.
 
 ## Copy the public key with a single line
 
-The command below performs the equivalent of `ssh-copy-id` using the OpenSSH client on Windows. Edit `user@host.address` with the remote user and host IP/hostname.
+The command below performs the equivalent of `ssh-copy-id` using the OpenSSH client on Windows. Edit `user@host.address` with the remote user and host IP or hostname.
 
 ``` bash
 type .ssh\id_rsa.pub | ssh user@host.address "mkdir -p .ssh && cat >> .ssh/authorized_keys"
 ```
 
-This makes it possible to login directly to your remote host by simply using:
+This makes it possible to log in directly to your remote host by simply using:
 
 ``` bash
 ssh user@host

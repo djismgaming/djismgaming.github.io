@@ -1,7 +1,7 @@
 ---
 title: Proxmox | automatically restore SMB/CIFS share connections
 date: 2024-01-10
-description: If at some point Proxmox loses connectivity with an SMB/CIFS share, it will not restore the connection by itself until a restart of the Proxmox node is performed. With the script…
+description: A bash script that automatically restores Proxmox SMB/CIFS share connections after they go stale, without restarting the Proxmox node.
 tags:
 - linux
 - proxmox
@@ -35,7 +35,7 @@ do
 done
 ```
 
-Remember to make the script executable by the user creating it:
+Remember to make the script executable:
 
 ``` bash
 chmod 766 /root/remount.sh
@@ -47,6 +47,6 @@ Add a cron job for this script to run automatically:
 * * * * * /root/remount.sh >/dev/null 2>&1
 ```
 
-With that, any SMB/CIFS connections are restored automatically. That is because the service `pvestatd` tries to remount every SMB share every 10 seconds.
+With that, any SMB/CIFS connection is restored automatically. That is because the service `pvestatd` tries to remount every SMB share every 10 seconds.
 
 This approach could work for NFS shares too, but that possibility has not been tested.

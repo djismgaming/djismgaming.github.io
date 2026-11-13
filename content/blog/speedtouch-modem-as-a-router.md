@@ -1,7 +1,7 @@
 ---
 title: SpeedTouch modem as a router
 date: 2023-10-13
-description: A SpeedTouch modem, like a 2007 model Thomson SpeedTouch 585V6, is a DSL modem. With a few tweaks it can be used as a router for the network. Run these commands towards the…
+description: 'Repurpose a 2007-era Thomson SpeedTouch 585V6 DSL modem as a network router with a few telnet commands.'
 tags:
 - linux
 - networking
@@ -13,8 +13,8 @@ tags:
 
 > **Historical** — This entry applies to 2007-era hardware (e.g. a Thomson SpeedTouch 585V6). It is kept for historical purposes only.
 
-A SpeedTouch modem, like a 2007 model Thomson SpeedTouch 585V6, is a DSL modem. With a few tweaks it can be used as a router for the network.
-Run these commands towards the SpeedTouch modem using `telnet`:
+A SpeedTouch modem, like a 2007 model Thomson SpeedTouch 585V6, is a DSL modem. With a few tweaks, it can be used as a router for the network.
+Run these commands against the SpeedTouch modem using `telnet`:
 
 ```bash
 telnet <modem ip address>

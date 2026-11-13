@@ -1,7 +1,7 @@
 ---
 title: Add storage to a Turnkey VM like Nextcloud
 date: 2025-04-30
-description: Managing LVM on Proxmox
+description: 'Extend the LVM volume of a Turnkey VM in Proxmox with an additional disk.'
 tags:
 - vm
 - turnkey
@@ -10,12 +10,8 @@ tags:
 - commands
 ---
 
-# Add storage to a Turnkey VM like Nextcloud
-
-Managing LVM on Proxmox
-
-- Add additional disk to Turnkey VM in Proxmox
-- find `/dev/sd*` for the new disk inside the VM
+- Add an additional disk to the Turnkey VM in Proxmox.
+- Find `/dev/sd*` for the new disk inside the VM.
 
 ```bash
 pvcreate /dev/sd*

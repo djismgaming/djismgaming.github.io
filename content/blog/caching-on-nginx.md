@@ -1,22 +1,19 @@
 ---
 title: Caching on nginx
 date: 2023-10-12
-description: For linuxserver/nginx
+description: 'Enable reverse-proxy caching on nginx, as configured for the linuxserver/nginx image.'
 tags:
 - commands
 ---
 
-# Caching on nginx
-
-
-Caching config ([https://www.nginx.com/resources/wiki/start/topics/examples/reverseproxycachingexample/](https://www.nginx.com/resources/wiki/start/topics/examples/reverseproxycachingexample/))
+Caching configuration ([https://www.nginx.com/resources/wiki/start/topics/examples/reverseproxycachingexample/](https://www.nginx.com/resources/wiki/start/topics/examples/reverseproxycachingexample/))
 
 
 This part goes into nginx.conf:
 ```
 proxy_cache_path /config/nginx/cache levels=1:2 keys_zone=STATIC:10m inactive=24h max_size=1g;
 ```
-This part goes in the location of the proxy-confs to cache:
+This part goes in the location block of the proxy-confs to cache:
 
 
 

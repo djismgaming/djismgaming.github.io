@@ -1,13 +1,10 @@
 ---
 title: yt-dlp command to transcode video to h264 after download
 date: 2026-08-18
-description: 'Here''s a breakdown:'
+description: 'Transcode a downloaded video to an H.264 MP4 file with yt-dlp.'
 tags:
 - commands
 ---
-
-# yt-dlp command to transcode video to h264 after download
-
 
 ```bash
 yt-dlp --recode-video mp4 --force-write-archive https://www.youtube.com/watch?v=dQw4w9WgXcQ

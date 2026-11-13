@@ -9,8 +9,6 @@ tags:
 - cron
 ---
 
-# Install glances and keep it running for showing gethomepage.dev system stats
-
 This guide makes the `glances` application run in the background on every reboot and provide the necessary metrics for homepage.
 
 Install pip:
@@ -31,14 +29,14 @@ Re-source the `.profile` so the `glances` executable is available in the current
 source ~/.profile
 ```
 
-Update the crontab to run glances at startup without web UI but able to share system metrics (no web UI to make it more efficient):
+Update the crontab to run glances at startup with the web UI disabled, so it still shares system metrics while using fewer resources:
 
 ``` bash
 # this goes in crontab
 @reboot /home/ismael/.local/bin/glances -w --disable-webui
 ```
 
-After a reboot, glances runs automatically on every boot. Works well in an LXC container.
+From then on, glances starts automatically at every boot. Works well in an LXC container.
 
 Create the `services.yaml` entry for gethomepage.dev to show server root usage stats:
 

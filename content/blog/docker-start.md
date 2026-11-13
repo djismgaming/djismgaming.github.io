@@ -1,18 +1,16 @@
 ---
 title: docker container startup with ntfy notifications
 date: 2023-11-07
-description: Used in selfhosted server and also a VPS
+description: Start all containers defined in your Docker Compose files, then send an ntfy notification when startup finishes.
 tags:
 - docker
 ---
 
-# docker container startup with ntfy notifications
-
-Used in selfhosted server and also a VPS
+Used on a self-hosted server and also on a VPS.
 
 > **Can be used in a set**
 >
-> - [Docker Backup](/blog/docker-backup/) to backup your yaml files and container data
+> - [Docker Backup](/blog/docker-backup/) to back up your yaml files and container data
 > - [Docker Restore](/blog/docker-restore/) to restore your yaml files and container data in the same or another host
 > - [Docker Start](/blog/docker-start/) to start all containers in your yaml files
 
@@ -26,10 +24,10 @@ Example user: ubuntu
 # Get today's date for our backup filename
 startDate=$(date  +'%F')
 
-# this just prints the formated date variable to the console if you want to see it.
-echo "Restore date $restoreDate"
+# this just prints the formatted date variable to the console if you want to see it.
+echo "Start date $startDate"
 
-# move to the path where you will keep all of yoru docker configurations and data
+# move to the path where you will keep all of your docker configurations and data
 cd /home/ubuntu/docker
 
 find . -maxdepth 2 -name "docker-compose.yml" -execdir docker compose up -d \;

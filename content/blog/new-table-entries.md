@@ -6,8 +6,6 @@ tags:
 - sap-scripts
 ---
 
-# Create New Table Entries in SAP SM30 Using VBS in Excel
-
 While working on SAP Security, I've come across a few situations where a script really helps. :wink:
 
 This is one of them.

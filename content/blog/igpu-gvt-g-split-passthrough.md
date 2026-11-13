@@ -18,7 +18,7 @@ Intel Integrated Graphics (iGPU) is the graphics engine built into the CPU, and 
 
 > **Warning**
 >
-> **Your mileage may vary depending on your hardware. The following guide was tested with Intel Gen8 CPU.**
+> **Your mileage may vary depending on your hardware. The following guide was tested with an Intel Gen8 CPU.**
 
 > **Supported CPUs**
 >
@@ -54,7 +54,7 @@ Find the line that starts with `GRUB_CMDLINE_LINUX_DEFAULT`. By default, it shou
 GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 ```
 
-This enables passthrough and blacklists the known graphics drivers, to stop Proxmox from using the iGPU itself.
+This enables passthrough and blacklists the known graphics drivers to stop Proxmox from using the iGPU itself.
 
 Your `GRUB_CMDLINE_LINUX_DEFAULT` should look like this:
 
@@ -68,7 +68,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on i915.enable_gvt=1 iommu=pt pcie
 
 Save and exit the editor.
 
-Update the grub configuration so the changes apply on the next boot:
+Update the GRUB configuration so the changes apply on the next boot:
 
 ```shell
 update-grub
@@ -149,7 +149,7 @@ Open the `Device` dropdown and select the iGPU, which you can find by its PCI ad
 
 Click `Mdev Type`. You should be presented with a list of the available split-passthrough devices — choose the best-performing one for the VM.
 
-Select `ROM-Bar`, `PCI-Express`, and then click `Add`.
+Select `ROM-Bar` and `PCI-Express`, then click `Add`.
 
 The Windows VM's Proxmox settings should look like this:
 
@@ -193,7 +193,7 @@ Open the `Device` dropdown and select the iGPU, which you can find by its PCI ad
 
 Click `Mdev Type`. You should be presented with a list of the available split-passthrough devices — choose the best-performing one for the VM.
 
-Select `ROM-Bar`, and then click `Add`.
+Select `ROM-Bar`, then click `Add`.
 
 The Ubuntu VM's Proxmox settings should look like this:
 
@@ -227,19 +227,19 @@ Debug messages — show hardware initialization and errors
 dmesg -w
 ```
 
-Display PCI devices information
+Display PCI device information
 
 ```shell
 lspci
 ```
 
-Display Driver in use for PCI devices
+Display the driver in use for PCI devices
 
 ```shell
 lspci -k
 ```
 
-Display IOMMU Groups the PCI devices are assigned to
+Display the IOMMU groups the PCI devices are assigned to
 
 ```shell
 #!/bin/bash

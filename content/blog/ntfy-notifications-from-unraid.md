@@ -1,7 +1,7 @@
 ---
 title: ntfy notifications from unRAID using curl
 date: 2024-10-28
-description: 'Send notifications from an unRAID server to ntfy using curl. The example below notifies the result of a Docker image prune:'
+description: 'Send notifications from an unRAID server to ntfy using curl; the example below reports the result of a Docker image prune.'
 tags:
 - ntfy
 ---

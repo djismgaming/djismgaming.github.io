@@ -1,18 +1,16 @@
 ---
 title: create sudo user with access to docker in ubuntu lxc container
 date: 2023-10-12
-description: or alternatively
+description: 'Create a sudo-enabled user with access to Docker in an Ubuntu LXC container.'
 tags:
 - commands
 ---
-
-# create sudo user with access to docker in ubuntu lxc container
 
 ``` bash
 useradd -s /bin/bash -m -G sudo,docker username
 ```
 
-or alternatively
+Alternatively:
 
 ``` bash
 adduser username

@@ -1,14 +1,12 @@
 ---
 title: Grow the boot volume of an oracle VM Ubuntu instance
 date: 2024-01-10
-description: Backup current partition table
+description: Grow the boot volume of an Oracle Cloud Ubuntu instance by expanding the partition and resizing the filesystem.
 tags:
 - commands
 ---
 
-# Grow the boot volume of an oracle VM Ubuntu instance
-
-Backup current partition table
+Back up the current partition table:
 
 ``` sh
 sfdisk -d /dev/sdb > sdb_partition_bak.dmp
@@ -26,13 +24,13 @@ If all looks good:
 growpart /dev/sdb 1
 ```
 
-Resize file system now:
+Resize the filesystem:
 
 ``` sh
 resize2fs /dev/sdb1
 ```
 
-See the change now:
+Check the result:
 
 ``` sh
 df -h

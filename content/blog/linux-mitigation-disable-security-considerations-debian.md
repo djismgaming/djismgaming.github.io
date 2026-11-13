@@ -6,8 +6,6 @@ tags:
 - commands
 ---
 
-# linux mitigation disable (debian)
-
 Adds `mitigations=off` to the kernel command line, which disables **all** optional CPU
 mitigations (Spectre, Meltdown, and the other grouped fixes). Do this only on machines that
 never run code you don't control — on a daily driver or shared system, leave them on.
