@@ -1,9 +1,3 @@
-# Code Review Findings (2026-11-12)
-
-From reviewing the Astro→Hugo migration result (`config/`, `content/`, `.github/workflows/hugo.yml`,
-`.gitignore`, `.gitmodules`, README, AGENTS.md). Build verified clean with the pinned
-`hugo v0.169.0+extended`.
-
 ## Blockers
 
 - [ ] `config/_default/hugo.toml`: `buildDrafts = false`, `buildFuture = false` and
